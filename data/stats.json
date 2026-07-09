@@ -1,0 +1,4354 @@
+{
+  "categories": [
+    {
+      "key": "university",
+      "label": "大学等進学率",
+      "unit": "%",
+      "source": "学校基本調査(2023)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "13",
+          "name": "東京都",
+          "value": 74.1
+        },
+        {
+          "rank": 2,
+          "code": "26",
+          "name": "京都府",
+          "value": 74
+        },
+        {
+          "rank": 3,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 69.4
+        },
+        {
+          "rank": 4,
+          "code": "27",
+          "name": "大阪府",
+          "value": 68.9
+        },
+        {
+          "rank": 5,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 68.5
+        },
+        {
+          "rank": 6,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 65.8
+        },
+        {
+          "rank": 7,
+          "code": "34",
+          "name": "広島県",
+          "value": 65.7
+        },
+        {
+          "rank": 8,
+          "code": "29",
+          "name": "奈良県",
+          "value": 65.2
+        },
+        {
+          "rank": 9,
+          "code": "12",
+          "name": "千葉県",
+          "value": 64.7
+        },
+        {
+          "rank": 10,
+          "code": "23",
+          "name": "愛知県",
+          "value": 64
+        },
+        {
+          "rank": 11,
+          "code": "17",
+          "name": "石川県",
+          "value": 62.7
+        },
+        {
+          "rank": 12,
+          "code": "19",
+          "name": "山梨県",
+          "value": 62.4
+        },
+        {
+          "rank": 13,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 61.7
+        },
+        {
+          "rank": 14,
+          "code": "18",
+          "name": "福井県",
+          "value": 61.2
+        },
+        {
+          "rank": 15,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 61.1
+        },
+        {
+          "rank": 16,
+          "code": "36",
+          "name": "徳島県",
+          "value": 59.7
+        },
+        {
+          "rank": 17,
+          "code": "40",
+          "name": "福岡県",
+          "value": 58.7
+        },
+        {
+          "rank": 18,
+          "code": "16",
+          "name": "富山県",
+          "value": 58.4
+        },
+        {
+          "rank": 19,
+          "code": "37",
+          "name": "香川県",
+          "value": 58.4
+        },
+        {
+          "rank": 20,
+          "code": "22",
+          "name": "静岡県",
+          "value": 58.1
+        },
+        {
+          "rank": 21,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 57.7
+        },
+        {
+          "rank": 22,
+          "code": "39",
+          "name": "高知県",
+          "value": 57.7
+        },
+        {
+          "rank": 23,
+          "code": "10",
+          "name": "群馬県",
+          "value": 57.4
+        },
+        {
+          "rank": 24,
+          "code": "08",
+          "name": "茨城県",
+          "value": 57.4
+        },
+        {
+          "rank": 25,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 57.1
+        },
+        {
+          "rank": 26,
+          "code": "09",
+          "name": "栃木県",
+          "value": 56.9
+        },
+        {
+          "rank": 27,
+          "code": "33",
+          "name": "岡山県",
+          "value": 56.8
+        },
+        {
+          "rank": 28,
+          "code": "04",
+          "name": "宮城県",
+          "value": 55.6
+        },
+        {
+          "rank": 29,
+          "code": "24",
+          "name": "三重県",
+          "value": 55.4
+        },
+        {
+          "rank": 30,
+          "code": "20",
+          "name": "長野県",
+          "value": 55.3
+        },
+        {
+          "rank": 31,
+          "code": "02",
+          "name": "青森県",
+          "value": 54.2
+        },
+        {
+          "rank": 32,
+          "code": "15",
+          "name": "新潟県",
+          "value": 53.7
+        },
+        {
+          "rank": 33,
+          "code": "01",
+          "name": "北海道",
+          "value": 52.7
+        },
+        {
+          "rank": 34,
+          "code": "44",
+          "name": "大分県",
+          "value": 52.1
+        },
+        {
+          "rank": 35,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 51.4
+        },
+        {
+          "rank": 36,
+          "code": "06",
+          "name": "山形県",
+          "value": 51
+        },
+        {
+          "rank": 37,
+          "code": "07",
+          "name": "福島県",
+          "value": 50.9
+        },
+        {
+          "rank": 38,
+          "code": "43",
+          "name": "熊本県",
+          "value": 50.4
+        },
+        {
+          "rank": 39,
+          "code": "32",
+          "name": "島根県",
+          "value": 50.1
+        },
+        {
+          "rank": 40,
+          "code": "03",
+          "name": "岩手県",
+          "value": 49.9
+        },
+        {
+          "rank": 41,
+          "code": "42",
+          "name": "長崎県",
+          "value": 49.7
+        },
+        {
+          "rank": 42,
+          "code": "05",
+          "name": "秋田県",
+          "value": 49.4
+        },
+        {
+          "rank": 43,
+          "code": "35",
+          "name": "山口県",
+          "value": 48.5
+        },
+        {
+          "rank": 44,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 48.4
+        },
+        {
+          "rank": 45,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 48.1
+        },
+        {
+          "rank": 46,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 48
+        },
+        {
+          "rank": 47,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 46.7
+        }
+      ]
+    },
+    {
+      "key": "home",
+      "label": "持ち家比率",
+      "unit": "%",
+      "source": "住宅・土地統計調査(2023)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "05",
+          "name": "秋田県",
+          "value": 77.1
+        },
+        {
+          "rank": 2,
+          "code": "06",
+          "name": "山形県",
+          "value": 75
+        },
+        {
+          "rank": 3,
+          "code": "16",
+          "name": "富山県",
+          "value": 74.9
+        },
+        {
+          "rank": 4,
+          "code": "15",
+          "name": "新潟県",
+          "value": 74
+        },
+        {
+          "rank": 5,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 73.8
+        },
+        {
+          "rank": 6,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 73.7
+        },
+        {
+          "rank": 7,
+          "code": "18",
+          "name": "福井県",
+          "value": 73.5
+        },
+        {
+          "rank": 8,
+          "code": "29",
+          "name": "奈良県",
+          "value": 73.2
+        },
+        {
+          "rank": 9,
+          "code": "24",
+          "name": "三重県",
+          "value": 72.3
+        },
+        {
+          "rank": 10,
+          "code": "20",
+          "name": "長野県",
+          "value": 71.7
+        },
+        {
+          "rank": 11,
+          "code": "02",
+          "name": "青森県",
+          "value": 71.4
+        },
+        {
+          "rank": 12,
+          "code": "10",
+          "name": "群馬県",
+          "value": 71.1
+        },
+        {
+          "rank": 13,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 70.9
+        },
+        {
+          "rank": 14,
+          "code": "03",
+          "name": "岩手県",
+          "value": 70.3
+        },
+        {
+          "rank": 15,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 69.6
+        },
+        {
+          "rank": 16,
+          "code": "32",
+          "name": "島根県",
+          "value": 69.6
+        },
+        {
+          "rank": 17,
+          "code": "37",
+          "name": "香川県",
+          "value": 69.4
+        },
+        {
+          "rank": 18,
+          "code": "08",
+          "name": "茨城県",
+          "value": 69.4
+        },
+        {
+          "rank": 19,
+          "code": "09",
+          "name": "栃木県",
+          "value": 69.1
+        },
+        {
+          "rank": 20,
+          "code": "19",
+          "name": "山梨県",
+          "value": 68.6
+        },
+        {
+          "rank": 21,
+          "code": "07",
+          "name": "福島県",
+          "value": 68.3
+        },
+        {
+          "rank": 22,
+          "code": "36",
+          "name": "徳島県",
+          "value": 68.1
+        },
+        {
+          "rank": 23,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 67.9
+        },
+        {
+          "rank": 24,
+          "code": "17",
+          "name": "石川県",
+          "value": 67.8
+        },
+        {
+          "rank": 25,
+          "code": "22",
+          "name": "静岡県",
+          "value": 67.4
+        },
+        {
+          "rank": 26,
+          "code": "35",
+          "name": "山口県",
+          "value": 67
+        },
+        {
+          "rank": 27,
+          "code": "39",
+          "name": "高知県",
+          "value": 66
+        },
+        {
+          "rank": 28,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 65.7
+        },
+        {
+          "rank": 29,
+          "code": "33",
+          "name": "岡山県",
+          "value": 65.6
+        },
+        {
+          "rank": 30,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 65.1
+        },
+        {
+          "rank": 31,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 65
+        },
+        {
+          "rank": 32,
+          "code": "12",
+          "name": "千葉県",
+          "value": 64.7
+        },
+        {
+          "rank": 33,
+          "code": "42",
+          "name": "長崎県",
+          "value": 64.7
+        },
+        {
+          "rank": 34,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 64.4
+        },
+        {
+          "rank": 35,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 63.3
+        },
+        {
+          "rank": 36,
+          "code": "43",
+          "name": "熊本県",
+          "value": 62.9
+        },
+        {
+          "rank": 37,
+          "code": "44",
+          "name": "大分県",
+          "value": 62.3
+        },
+        {
+          "rank": 38,
+          "code": "34",
+          "name": "広島県",
+          "value": 61.9
+        },
+        {
+          "rank": 39,
+          "code": "26",
+          "name": "京都府",
+          "value": 60.7
+        },
+        {
+          "rank": 40,
+          "code": "04",
+          "name": "宮城県",
+          "value": 60
+        },
+        {
+          "rank": 41,
+          "code": "23",
+          "name": "愛知県",
+          "value": 59.6
+        },
+        {
+          "rank": 42,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 58.7
+        },
+        {
+          "rank": 43,
+          "code": "01",
+          "name": "北海道",
+          "value": 57
+        },
+        {
+          "rank": 44,
+          "code": "27",
+          "name": "大阪府",
+          "value": 54.5
+        },
+        {
+          "rank": 45,
+          "code": "40",
+          "name": "福岡県",
+          "value": 52.7
+        },
+        {
+          "rank": 46,
+          "code": "13",
+          "name": "東京都",
+          "value": 44.7
+        },
+        {
+          "rank": 47,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 42.6
+        }
+      ]
+    },
+    {
+      "key": "savings",
+      "label": "平均貯蓄率",
+      "unit": "%",
+      "source": "全国家計構造調査(2024)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 44.6
+        },
+        {
+          "rank": 2,
+          "code": "18",
+          "name": "福井県",
+          "value": 44.5
+        },
+        {
+          "rank": 3,
+          "code": "17",
+          "name": "石川県",
+          "value": 44.3
+        },
+        {
+          "rank": 4,
+          "code": "08",
+          "name": "茨城県",
+          "value": 44
+        },
+        {
+          "rank": 5,
+          "code": "26",
+          "name": "京都府",
+          "value": 43.8
+        },
+        {
+          "rank": 6,
+          "code": "24",
+          "name": "三重県",
+          "value": 42.3
+        },
+        {
+          "rank": 7,
+          "code": "29",
+          "name": "奈良県",
+          "value": 41.7
+        },
+        {
+          "rank": 8,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 40.9
+        },
+        {
+          "rank": 9,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 39.5
+        },
+        {
+          "rank": 10,
+          "code": "23",
+          "name": "愛知県",
+          "value": 39.4
+        },
+        {
+          "rank": 11,
+          "code": "04",
+          "name": "宮城県",
+          "value": 39.1
+        },
+        {
+          "rank": 12,
+          "code": "06",
+          "name": "山形県",
+          "value": 38.8
+        },
+        {
+          "rank": 13,
+          "code": "36",
+          "name": "徳島県",
+          "value": 38.5
+        },
+        {
+          "rank": 14,
+          "code": "09",
+          "name": "栃木県",
+          "value": 38.5
+        },
+        {
+          "rank": 15,
+          "code": "16",
+          "name": "富山県",
+          "value": 38.4
+        },
+        {
+          "rank": 16,
+          "code": "27",
+          "name": "大阪府",
+          "value": 38.2
+        },
+        {
+          "rank": 17,
+          "code": "32",
+          "name": "島根県",
+          "value": 37.7
+        },
+        {
+          "rank": 18,
+          "code": "20",
+          "name": "長野県",
+          "value": 37.5
+        },
+        {
+          "rank": 19,
+          "code": "35",
+          "name": "山口県",
+          "value": 37.2
+        },
+        {
+          "rank": 20,
+          "code": "22",
+          "name": "静岡県",
+          "value": 36.8
+        },
+        {
+          "rank": 21,
+          "code": "33",
+          "name": "岡山県",
+          "value": 36.3
+        },
+        {
+          "rank": 22,
+          "code": "15",
+          "name": "新潟県",
+          "value": 36.2
+        },
+        {
+          "rank": 23,
+          "code": "37",
+          "name": "香川県",
+          "value": 36.1
+        },
+        {
+          "rank": 24,
+          "code": "34",
+          "name": "広島県",
+          "value": 35.8
+        },
+        {
+          "rank": 25,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 35.4
+        },
+        {
+          "rank": 26,
+          "code": "19",
+          "name": "山梨県",
+          "value": 35.3
+        },
+        {
+          "rank": 27,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 34.9
+        },
+        {
+          "rank": 28,
+          "code": "02",
+          "name": "青森県",
+          "value": 34.7
+        },
+        {
+          "rank": 29,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 34.4
+        },
+        {
+          "rank": 30,
+          "code": "39",
+          "name": "高知県",
+          "value": 34.4
+        },
+        {
+          "rank": 31,
+          "code": "40",
+          "name": "福岡県",
+          "value": 34.3
+        },
+        {
+          "rank": 32,
+          "code": "12",
+          "name": "千葉県",
+          "value": 33.8
+        },
+        {
+          "rank": 33,
+          "code": "13",
+          "name": "東京都",
+          "value": 33.4
+        },
+        {
+          "rank": 34,
+          "code": "42",
+          "name": "長崎県",
+          "value": 33
+        },
+        {
+          "rank": 35,
+          "code": "07",
+          "name": "福島県",
+          "value": 32.4
+        },
+        {
+          "rank": 36,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 32.2
+        },
+        {
+          "rank": 37,
+          "code": "44",
+          "name": "大分県",
+          "value": 31.8
+        },
+        {
+          "rank": 38,
+          "code": "43",
+          "name": "熊本県",
+          "value": 31.2
+        },
+        {
+          "rank": 39,
+          "code": "05",
+          "name": "秋田県",
+          "value": 31.1
+        },
+        {
+          "rank": 40,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 30.3
+        },
+        {
+          "rank": 41,
+          "code": "03",
+          "name": "岩手県",
+          "value": 30.3
+        },
+        {
+          "rank": 42,
+          "code": "01",
+          "name": "北海道",
+          "value": 28.9
+        },
+        {
+          "rank": 43,
+          "code": "10",
+          "name": "群馬県",
+          "value": 28.1
+        },
+        {
+          "rank": 44,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 28.1
+        },
+        {
+          "rank": 45,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 27.3
+        },
+        {
+          "rank": 46,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 25.3
+        },
+        {
+          "rank": 47,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 23.2
+        }
+      ]
+    },
+    {
+      "key": "sansedai",
+      "label": "三世代同居率",
+      "unit": "%",
+      "source": "国勢調査(2020)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "06",
+          "name": "山形県",
+          "value": 13.92
+        },
+        {
+          "rank": 2,
+          "code": "18",
+          "name": "福井県",
+          "value": 11.49
+        },
+        {
+          "rank": 3,
+          "code": "15",
+          "name": "新潟県",
+          "value": 10.49
+        },
+        {
+          "rank": 4,
+          "code": "05",
+          "name": "秋田県",
+          "value": 10.29
+        },
+        {
+          "rank": 5,
+          "code": "16",
+          "name": "富山県",
+          "value": 10.08
+        },
+        {
+          "rank": 6,
+          "code": "03",
+          "name": "岩手県",
+          "value": 9.56
+        },
+        {
+          "rank": 7,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 9.42
+        },
+        {
+          "rank": 8,
+          "code": "07",
+          "name": "福島県",
+          "value": 9.33
+        },
+        {
+          "rank": 9,
+          "code": "32",
+          "name": "島根県",
+          "value": 9.15
+        },
+        {
+          "rank": 10,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 9.13
+        },
+        {
+          "rank": 11,
+          "code": "02",
+          "name": "青森県",
+          "value": 8.42
+        },
+        {
+          "rank": 12,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 8.24
+        },
+        {
+          "rank": 13,
+          "code": "20",
+          "name": "長野県",
+          "value": 7.63
+        },
+        {
+          "rank": 14,
+          "code": "22",
+          "name": "静岡県",
+          "value": 7.4
+        },
+        {
+          "rank": 15,
+          "code": "09",
+          "name": "栃木県",
+          "value": 7.14
+        },
+        {
+          "rank": 16,
+          "code": "04",
+          "name": "宮城県",
+          "value": 6.88
+        },
+        {
+          "rank": 17,
+          "code": "08",
+          "name": "茨城県",
+          "value": 6.78
+        },
+        {
+          "rank": 18,
+          "code": "17",
+          "name": "石川県",
+          "value": 6.65
+        },
+        {
+          "rank": 19,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 6.31
+        },
+        {
+          "rank": 20,
+          "code": "43",
+          "name": "熊本県",
+          "value": 6.1
+        },
+        {
+          "rank": 21,
+          "code": "19",
+          "name": "山梨県",
+          "value": 5.98
+        },
+        {
+          "rank": 22,
+          "code": "36",
+          "name": "徳島県",
+          "value": 5.71
+        },
+        {
+          "rank": 23,
+          "code": "10",
+          "name": "群馬県",
+          "value": 5.44
+        },
+        {
+          "rank": 24,
+          "code": "24",
+          "name": "三重県",
+          "value": 5.43
+        },
+        {
+          "rank": 25,
+          "code": "33",
+          "name": "岡山県",
+          "value": 5.25
+        },
+        {
+          "rank": 26,
+          "code": "42",
+          "name": "長崎県",
+          "value": 4.98
+        },
+        {
+          "rank": 27,
+          "code": "37",
+          "name": "香川県",
+          "value": 4.7
+        },
+        {
+          "rank": 28,
+          "code": "29",
+          "name": "奈良県",
+          "value": 4.6
+        },
+        {
+          "rank": 29,
+          "code": "23",
+          "name": "愛知県",
+          "value": 4.52
+        },
+        {
+          "rank": 30,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 4.44
+        },
+        {
+          "rank": 31,
+          "code": "44",
+          "name": "大分県",
+          "value": 4.38
+        },
+        {
+          "rank": 32,
+          "code": "35",
+          "name": "山口県",
+          "value": 3.48
+        },
+        {
+          "rank": 33,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 3.48
+        },
+        {
+          "rank": 34,
+          "code": "12",
+          "name": "千葉県",
+          "value": 3.46
+        },
+        {
+          "rank": 35,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 3.44
+        },
+        {
+          "rank": 36,
+          "code": "39",
+          "name": "高知県",
+          "value": 3.36
+        },
+        {
+          "rank": 37,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 3.35
+        },
+        {
+          "rank": 38,
+          "code": "34",
+          "name": "広島県",
+          "value": 3.34
+        },
+        {
+          "rank": 39,
+          "code": "40",
+          "name": "福岡県",
+          "value": 3.3
+        },
+        {
+          "rank": 40,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 3.28
+        },
+        {
+          "rank": 41,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 3.23
+        },
+        {
+          "rank": 42,
+          "code": "26",
+          "name": "京都府",
+          "value": 3.04
+        },
+        {
+          "rank": 43,
+          "code": "01",
+          "name": "北海道",
+          "value": 2.41
+        },
+        {
+          "rank": 44,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 2.22
+        },
+        {
+          "rank": 45,
+          "code": "27",
+          "name": "大阪府",
+          "value": 2.1
+        },
+        {
+          "rank": 46,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 1.93
+        },
+        {
+          "rank": 47,
+          "code": "13",
+          "name": "東京都",
+          "value": 1.35
+        }
+      ]
+    },
+    {
+      "key": "owarai",
+      "label": "お笑い芸人輩出数(人口10万人あたり)",
+      "unit": "人",
+      "source": "とどラン(民間集計・2023)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "27",
+          "name": "大阪府",
+          "value": 4.21
+        },
+        {
+          "rank": 2,
+          "code": "26",
+          "name": "京都府",
+          "value": 2.99
+        },
+        {
+          "rank": 3,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 2.93
+        },
+        {
+          "rank": 4,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 2.47
+        },
+        {
+          "rank": 5,
+          "code": "29",
+          "name": "奈良県",
+          "value": 1.96
+        },
+        {
+          "rank": 6,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 1.95
+        },
+        {
+          "rank": 7,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 1.81
+        },
+        {
+          "rank": 8,
+          "code": "39",
+          "name": "高知県",
+          "value": 1.73
+        },
+        {
+          "rank": 9,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 1.56
+        },
+        {
+          "rank": 10,
+          "code": "43",
+          "name": "熊本県",
+          "value": 1.44
+        },
+        {
+          "rank": 11,
+          "code": "33",
+          "name": "岡山県",
+          "value": 1.38
+        },
+        {
+          "rank": 12,
+          "code": "32",
+          "name": "島根県",
+          "value": 1.34
+        },
+        {
+          "rank": 13,
+          "code": "13",
+          "name": "東京都",
+          "value": 1.29
+        },
+        {
+          "rank": 14,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 1.22
+        },
+        {
+          "rank": 15,
+          "code": "24",
+          "name": "三重県",
+          "value": 1.19
+        },
+        {
+          "rank": 16,
+          "code": "34",
+          "name": "広島県",
+          "value": 1.18
+        },
+        {
+          "rank": 17,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 1.17
+        },
+        {
+          "rank": 18,
+          "code": "02",
+          "name": "青森県",
+          "value": 1.13
+        },
+        {
+          "rank": 19,
+          "code": "06",
+          "name": "山形県",
+          "value": 1.12
+        },
+        {
+          "rank": 20,
+          "code": "16",
+          "name": "富山県",
+          "value": 1.11
+        },
+        {
+          "rank": 21,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 1.11
+        },
+        {
+          "rank": 22,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 1.09
+        },
+        {
+          "rank": 23,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 1.07
+        },
+        {
+          "rank": 24,
+          "code": "37",
+          "name": "香川県",
+          "value": 1.05
+        },
+        {
+          "rank": 25,
+          "code": "19",
+          "name": "山梨県",
+          "value": 1.04
+        },
+        {
+          "rank": 26,
+          "code": "35",
+          "name": "山口県",
+          "value": 1.04
+        },
+        {
+          "rank": 27,
+          "code": "40",
+          "name": "福岡県",
+          "value": 1.03
+        },
+        {
+          "rank": 28,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 0.98
+        },
+        {
+          "rank": 29,
+          "code": "07",
+          "name": "福島県",
+          "value": 0.98
+        },
+        {
+          "rank": 30,
+          "code": "17",
+          "name": "石川県",
+          "value": 0.97
+        },
+        {
+          "rank": 31,
+          "code": "36",
+          "name": "徳島県",
+          "value": 0.97
+        },
+        {
+          "rank": 32,
+          "code": "12",
+          "name": "千葉県",
+          "value": 0.94
+        },
+        {
+          "rank": 33,
+          "code": "01",
+          "name": "北海道",
+          "value": 0.94
+        },
+        {
+          "rank": 34,
+          "code": "10",
+          "name": "群馬県",
+          "value": 0.93
+        },
+        {
+          "rank": 35,
+          "code": "22",
+          "name": "静岡県",
+          "value": 0.91
+        },
+        {
+          "rank": 36,
+          "code": "08",
+          "name": "茨城県",
+          "value": 0.87
+        },
+        {
+          "rank": 37,
+          "code": "05",
+          "name": "秋田県",
+          "value": 0.83
+        },
+        {
+          "rank": 38,
+          "code": "03",
+          "name": "岩手県",
+          "value": 0.83
+        },
+        {
+          "rank": 39,
+          "code": "15",
+          "name": "新潟県",
+          "value": 0.82
+        },
+        {
+          "rank": 40,
+          "code": "44",
+          "name": "大分県",
+          "value": 0.8
+        },
+        {
+          "rank": 41,
+          "code": "20",
+          "name": "長野県",
+          "value": 0.73
+        },
+        {
+          "rank": 42,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 0.71
+        },
+        {
+          "rank": 43,
+          "code": "09",
+          "name": "栃木県",
+          "value": 0.67
+        },
+        {
+          "rank": 44,
+          "code": "23",
+          "name": "愛知県",
+          "value": 0.61
+        },
+        {
+          "rank": 45,
+          "code": "18",
+          "name": "福井県",
+          "value": 0.53
+        },
+        {
+          "rank": 46,
+          "code": "04",
+          "name": "宮城県",
+          "value": 0.48
+        },
+        {
+          "rank": 47,
+          "code": "42",
+          "name": "長崎県",
+          "value": 0.46
+        }
+      ]
+    },
+    {
+      "key": "sports",
+      "label": "スポーツ行動者率",
+      "unit": "%",
+      "source": "社会生活基本調査(2021)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "13",
+          "name": "東京都",
+          "value": 74.5
+        },
+        {
+          "rank": 2,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 71.8
+        },
+        {
+          "rank": 3,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 69.3
+        },
+        {
+          "rank": 4,
+          "code": "23",
+          "name": "愛知県",
+          "value": 68.8
+        },
+        {
+          "rank": 5,
+          "code": "12",
+          "name": "千葉県",
+          "value": 67.4
+        },
+        {
+          "rank": 6,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 67.2
+        },
+        {
+          "rank": 7,
+          "code": "10",
+          "name": "群馬県",
+          "value": 67
+        },
+        {
+          "rank": 8,
+          "code": "26",
+          "name": "京都府",
+          "value": 67
+        },
+        {
+          "rank": 9,
+          "code": "40",
+          "name": "福岡県",
+          "value": 67
+        },
+        {
+          "rank": 10,
+          "code": "43",
+          "name": "熊本県",
+          "value": 66.6
+        },
+        {
+          "rank": 11,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 66.4
+        },
+        {
+          "rank": 12,
+          "code": "22",
+          "name": "静岡県",
+          "value": 66.3
+        },
+        {
+          "rank": 13,
+          "code": "27",
+          "name": "大阪府",
+          "value": 66.1
+        },
+        {
+          "rank": 14,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 65.8
+        },
+        {
+          "rank": 15,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 65.8
+        },
+        {
+          "rank": 16,
+          "code": "08",
+          "name": "茨城県",
+          "value": 65.8
+        },
+        {
+          "rank": 17,
+          "code": "34",
+          "name": "広島県",
+          "value": 65.3
+        },
+        {
+          "rank": 18,
+          "code": "29",
+          "name": "奈良県",
+          "value": 64.8
+        },
+        {
+          "rank": 19,
+          "code": "33",
+          "name": "岡山県",
+          "value": 64.8
+        },
+        {
+          "rank": 20,
+          "code": "04",
+          "name": "宮城県",
+          "value": 64.4
+        },
+        {
+          "rank": 21,
+          "code": "24",
+          "name": "三重県",
+          "value": 64.3
+        },
+        {
+          "rank": 22,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 64.1
+        },
+        {
+          "rank": 23,
+          "code": "20",
+          "name": "長野県",
+          "value": 64
+        },
+        {
+          "rank": 24,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 64
+        },
+        {
+          "rank": 25,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 63.5
+        },
+        {
+          "rank": 26,
+          "code": "17",
+          "name": "石川県",
+          "value": 63.4
+        },
+        {
+          "rank": 27,
+          "code": "35",
+          "name": "山口県",
+          "value": 63.2
+        },
+        {
+          "rank": 28,
+          "code": "44",
+          "name": "大分県",
+          "value": 63.1
+        },
+        {
+          "rank": 29,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 62.8
+        },
+        {
+          "rank": 30,
+          "code": "09",
+          "name": "栃木県",
+          "value": 62.6
+        },
+        {
+          "rank": 31,
+          "code": "19",
+          "name": "山梨県",
+          "value": 62.2
+        },
+        {
+          "rank": 32,
+          "code": "01",
+          "name": "北海道",
+          "value": 62.2
+        },
+        {
+          "rank": 33,
+          "code": "37",
+          "name": "香川県",
+          "value": 61.8
+        },
+        {
+          "rank": 34,
+          "code": "18",
+          "name": "福井県",
+          "value": 61.5
+        },
+        {
+          "rank": 35,
+          "code": "32",
+          "name": "島根県",
+          "value": 61.4
+        },
+        {
+          "rank": 36,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 61.2
+        },
+        {
+          "rank": 37,
+          "code": "36",
+          "name": "徳島県",
+          "value": 60.9
+        },
+        {
+          "rank": 38,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 59.8
+        },
+        {
+          "rank": 39,
+          "code": "16",
+          "name": "富山県",
+          "value": 59.7
+        },
+        {
+          "rank": 40,
+          "code": "07",
+          "name": "福島県",
+          "value": 59.5
+        },
+        {
+          "rank": 41,
+          "code": "39",
+          "name": "高知県",
+          "value": 59.4
+        },
+        {
+          "rank": 42,
+          "code": "03",
+          "name": "岩手県",
+          "value": 59.1
+        },
+        {
+          "rank": 43,
+          "code": "15",
+          "name": "新潟県",
+          "value": 59
+        },
+        {
+          "rank": 44,
+          "code": "06",
+          "name": "山形県",
+          "value": 58.4
+        },
+        {
+          "rank": 45,
+          "code": "42",
+          "name": "長崎県",
+          "value": 57.8
+        },
+        {
+          "rank": 46,
+          "code": "05",
+          "name": "秋田県",
+          "value": 57.1
+        },
+        {
+          "rank": 47,
+          "code": "02",
+          "name": "青森県",
+          "value": 52.1
+        }
+      ]
+    },
+    {
+      "key": "travel",
+      "label": "旅行・行楽行動者率",
+      "unit": "%",
+      "source": "社会生活基本調査(2021)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "23",
+          "name": "愛知県",
+          "value": 57.6
+        },
+        {
+          "rank": 2,
+          "code": "13",
+          "name": "東京都",
+          "value": 55.5
+        },
+        {
+          "rank": 3,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 54.5
+        },
+        {
+          "rank": 4,
+          "code": "26",
+          "name": "京都府",
+          "value": 54.2
+        },
+        {
+          "rank": 5,
+          "code": "40",
+          "name": "福岡県",
+          "value": 52.3
+        },
+        {
+          "rank": 6,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 52.2
+        },
+        {
+          "rank": 7,
+          "code": "04",
+          "name": "宮城県",
+          "value": 52.2
+        },
+        {
+          "rank": 8,
+          "code": "27",
+          "name": "大阪府",
+          "value": 51.9
+        },
+        {
+          "rank": 9,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 51.6
+        },
+        {
+          "rank": 10,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 51.5
+        },
+        {
+          "rank": 11,
+          "code": "01",
+          "name": "北海道",
+          "value": 51
+        },
+        {
+          "rank": 12,
+          "code": "10",
+          "name": "群馬県",
+          "value": 50.8
+        },
+        {
+          "rank": 13,
+          "code": "43",
+          "name": "熊本県",
+          "value": 50.5
+        },
+        {
+          "rank": 14,
+          "code": "29",
+          "name": "奈良県",
+          "value": 50.4
+        },
+        {
+          "rank": 15,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 48.6
+        },
+        {
+          "rank": 16,
+          "code": "12",
+          "name": "千葉県",
+          "value": 47.9
+        },
+        {
+          "rank": 17,
+          "code": "15",
+          "name": "新潟県",
+          "value": 47.6
+        },
+        {
+          "rank": 18,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 47.5
+        },
+        {
+          "rank": 19,
+          "code": "09",
+          "name": "栃木県",
+          "value": 47.3
+        },
+        {
+          "rank": 20,
+          "code": "34",
+          "name": "広島県",
+          "value": 47.1
+        },
+        {
+          "rank": 21,
+          "code": "24",
+          "name": "三重県",
+          "value": 47
+        },
+        {
+          "rank": 22,
+          "code": "20",
+          "name": "長野県",
+          "value": 46.9
+        },
+        {
+          "rank": 23,
+          "code": "19",
+          "name": "山梨県",
+          "value": 46.7
+        },
+        {
+          "rank": 24,
+          "code": "03",
+          "name": "岩手県",
+          "value": 45.3
+        },
+        {
+          "rank": 25,
+          "code": "44",
+          "name": "大分県",
+          "value": 45
+        },
+        {
+          "rank": 26,
+          "code": "08",
+          "name": "茨城県",
+          "value": 45
+        },
+        {
+          "rank": 27,
+          "code": "05",
+          "name": "秋田県",
+          "value": 44.8
+        },
+        {
+          "rank": 28,
+          "code": "17",
+          "name": "石川県",
+          "value": 44.7
+        },
+        {
+          "rank": 29,
+          "code": "07",
+          "name": "福島県",
+          "value": 44.4
+        },
+        {
+          "rank": 30,
+          "code": "18",
+          "name": "福井県",
+          "value": 44.3
+        },
+        {
+          "rank": 31,
+          "code": "06",
+          "name": "山形県",
+          "value": 44.3
+        },
+        {
+          "rank": 32,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 44.1
+        },
+        {
+          "rank": 33,
+          "code": "35",
+          "name": "山口県",
+          "value": 43.5
+        },
+        {
+          "rank": 34,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 43.3
+        },
+        {
+          "rank": 35,
+          "code": "33",
+          "name": "岡山県",
+          "value": 43
+        },
+        {
+          "rank": 36,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 42.8
+        },
+        {
+          "rank": 37,
+          "code": "22",
+          "name": "静岡県",
+          "value": 41.3
+        },
+        {
+          "rank": 38,
+          "code": "16",
+          "name": "富山県",
+          "value": 41.1
+        },
+        {
+          "rank": 39,
+          "code": "32",
+          "name": "島根県",
+          "value": 39.8
+        },
+        {
+          "rank": 40,
+          "code": "39",
+          "name": "高知県",
+          "value": 39.2
+        },
+        {
+          "rank": 41,
+          "code": "37",
+          "name": "香川県",
+          "value": 39
+        },
+        {
+          "rank": 42,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 38.4
+        },
+        {
+          "rank": 43,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 37.4
+        },
+        {
+          "rank": 44,
+          "code": "02",
+          "name": "青森県",
+          "value": 36.6
+        },
+        {
+          "rank": 45,
+          "code": "42",
+          "name": "長崎県",
+          "value": 36.1
+        },
+        {
+          "rank": 46,
+          "code": "36",
+          "name": "徳島県",
+          "value": 32.2
+        },
+        {
+          "rank": 47,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 31.1
+        }
+      ]
+    },
+    {
+      "key": "gaishoku",
+      "label": "外食費(県庁所在市・年間)",
+      "unit": "円",
+      "source": "家計調査(2024)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "13",
+          "name": "東京都",
+          "value": 270440
+        },
+        {
+          "rank": 2,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 243122
+        },
+        {
+          "rank": 3,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 239291
+        },
+        {
+          "rank": 4,
+          "code": "12",
+          "name": "千葉県",
+          "value": 229745
+        },
+        {
+          "rank": 5,
+          "code": "43",
+          "name": "熊本県",
+          "value": 228007
+        },
+        {
+          "rank": 6,
+          "code": "23",
+          "name": "愛知県",
+          "value": 226318
+        },
+        {
+          "rank": 7,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 215852
+        },
+        {
+          "rank": 8,
+          "code": "29",
+          "name": "奈良県",
+          "value": 209048
+        },
+        {
+          "rank": 9,
+          "code": "26",
+          "name": "京都府",
+          "value": 203051
+        },
+        {
+          "rank": 10,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 201662
+        },
+        {
+          "rank": 11,
+          "code": "16",
+          "name": "富山県",
+          "value": 201275
+        },
+        {
+          "rank": 12,
+          "code": "22",
+          "name": "静岡県",
+          "value": 197984
+        },
+        {
+          "rank": 13,
+          "code": "40",
+          "name": "福岡県",
+          "value": 192699
+        },
+        {
+          "rank": 14,
+          "code": "33",
+          "name": "岡山県",
+          "value": 192553
+        },
+        {
+          "rank": 15,
+          "code": "09",
+          "name": "栃木県",
+          "value": 190874
+        },
+        {
+          "rank": 16,
+          "code": "04",
+          "name": "宮城県",
+          "value": 188718
+        },
+        {
+          "rank": 17,
+          "code": "39",
+          "name": "高知県",
+          "value": 188592
+        },
+        {
+          "rank": 18,
+          "code": "27",
+          "name": "大阪府",
+          "value": 186254
+        },
+        {
+          "rank": 19,
+          "code": "06",
+          "name": "山形県",
+          "value": 185760
+        },
+        {
+          "rank": 20,
+          "code": "20",
+          "name": "長野県",
+          "value": 184641
+        },
+        {
+          "rank": 21,
+          "code": "44",
+          "name": "大分県",
+          "value": 184400
+        },
+        {
+          "rank": 22,
+          "code": "10",
+          "name": "群馬県",
+          "value": 183330
+        },
+        {
+          "rank": 23,
+          "code": "37",
+          "name": "香川県",
+          "value": 181009
+        },
+        {
+          "rank": 24,
+          "code": "24",
+          "name": "三重県",
+          "value": 178640
+        },
+        {
+          "rank": 25,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 177995
+        },
+        {
+          "rank": 26,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 177638
+        },
+        {
+          "rank": 27,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 176608
+        },
+        {
+          "rank": 28,
+          "code": "19",
+          "name": "山梨県",
+          "value": 175937
+        },
+        {
+          "rank": 29,
+          "code": "17",
+          "name": "石川県",
+          "value": 171174
+        },
+        {
+          "rank": 30,
+          "code": "08",
+          "name": "茨城県",
+          "value": 169574
+        },
+        {
+          "rank": 31,
+          "code": "18",
+          "name": "福井県",
+          "value": 168532
+        },
+        {
+          "rank": 32,
+          "code": "34",
+          "name": "広島県",
+          "value": 166778
+        },
+        {
+          "rank": 33,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 165634
+        },
+        {
+          "rank": 34,
+          "code": "36",
+          "name": "徳島県",
+          "value": 165292
+        },
+        {
+          "rank": 35,
+          "code": "03",
+          "name": "岩手県",
+          "value": 157268
+        },
+        {
+          "rank": 36,
+          "code": "35",
+          "name": "山口県",
+          "value": 155444
+        },
+        {
+          "rank": 37,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 155237
+        },
+        {
+          "rank": 38,
+          "code": "01",
+          "name": "北海道",
+          "value": 152390
+        },
+        {
+          "rank": 39,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 151805
+        },
+        {
+          "rank": 40,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 147207
+        },
+        {
+          "rank": 41,
+          "code": "07",
+          "name": "福島県",
+          "value": 142699
+        },
+        {
+          "rank": 42,
+          "code": "32",
+          "name": "島根県",
+          "value": 141564
+        },
+        {
+          "rank": 43,
+          "code": "15",
+          "name": "新潟県",
+          "value": 141110
+        },
+        {
+          "rank": 44,
+          "code": "42",
+          "name": "長崎県",
+          "value": 137291
+        },
+        {
+          "rank": 45,
+          "code": "05",
+          "name": "秋田県",
+          "value": 130313
+        },
+        {
+          "rank": 46,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 127885
+        },
+        {
+          "rank": 47,
+          "code": "02",
+          "name": "青森県",
+          "value": 109168
+        }
+      ]
+    },
+    {
+      "key": "kousai",
+      "label": "交際費(県庁所在市・年間)",
+      "unit": "円",
+      "source": "家計調査(2024)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 193689
+        },
+        {
+          "rank": 2,
+          "code": "33",
+          "name": "岡山県",
+          "value": 163859
+        },
+        {
+          "rank": 3,
+          "code": "43",
+          "name": "熊本県",
+          "value": 150220
+        },
+        {
+          "rank": 4,
+          "code": "20",
+          "name": "長野県",
+          "value": 147367
+        },
+        {
+          "rank": 5,
+          "code": "12",
+          "name": "千葉県",
+          "value": 145894
+        },
+        {
+          "rank": 6,
+          "code": "10",
+          "name": "群馬県",
+          "value": 135019
+        },
+        {
+          "rank": 7,
+          "code": "40",
+          "name": "福岡県",
+          "value": 134870
+        },
+        {
+          "rank": 8,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 133701
+        },
+        {
+          "rank": 9,
+          "code": "29",
+          "name": "奈良県",
+          "value": 132327
+        },
+        {
+          "rank": 10,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 128298
+        },
+        {
+          "rank": 11,
+          "code": "16",
+          "name": "富山県",
+          "value": 127837
+        },
+        {
+          "rank": 12,
+          "code": "18",
+          "name": "福井県",
+          "value": 126475
+        },
+        {
+          "rank": 13,
+          "code": "39",
+          "name": "高知県",
+          "value": 126186
+        },
+        {
+          "rank": 14,
+          "code": "44",
+          "name": "大分県",
+          "value": 125375
+        },
+        {
+          "rank": 15,
+          "code": "42",
+          "name": "長崎県",
+          "value": 125293
+        },
+        {
+          "rank": 16,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 124722
+        },
+        {
+          "rank": 17,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 124416
+        },
+        {
+          "rank": 18,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 123248
+        },
+        {
+          "rank": 19,
+          "code": "07",
+          "name": "福島県",
+          "value": 121965
+        },
+        {
+          "rank": 20,
+          "code": "34",
+          "name": "広島県",
+          "value": 120280
+        },
+        {
+          "rank": 21,
+          "code": "35",
+          "name": "山口県",
+          "value": 120273
+        },
+        {
+          "rank": 22,
+          "code": "08",
+          "name": "茨城県",
+          "value": 119699
+        },
+        {
+          "rank": 23,
+          "code": "04",
+          "name": "宮城県",
+          "value": 117450
+        },
+        {
+          "rank": 24,
+          "code": "23",
+          "name": "愛知県",
+          "value": 117396
+        },
+        {
+          "rank": 25,
+          "code": "32",
+          "name": "島根県",
+          "value": 117198
+        },
+        {
+          "rank": 26,
+          "code": "17",
+          "name": "石川県",
+          "value": 116815
+        },
+        {
+          "rank": 27,
+          "code": "13",
+          "name": "東京都",
+          "value": 112998
+        },
+        {
+          "rank": 28,
+          "code": "27",
+          "name": "大阪府",
+          "value": 112235
+        },
+        {
+          "rank": 29,
+          "code": "24",
+          "name": "三重県",
+          "value": 110479
+        },
+        {
+          "rank": 30,
+          "code": "03",
+          "name": "岩手県",
+          "value": 109713
+        },
+        {
+          "rank": 31,
+          "code": "09",
+          "name": "栃木県",
+          "value": 109429
+        },
+        {
+          "rank": 32,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 108860
+        },
+        {
+          "rank": 33,
+          "code": "36",
+          "name": "徳島県",
+          "value": 108764
+        },
+        {
+          "rank": 34,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 107523
+        },
+        {
+          "rank": 35,
+          "code": "19",
+          "name": "山梨県",
+          "value": 105654
+        },
+        {
+          "rank": 36,
+          "code": "06",
+          "name": "山形県",
+          "value": 104982
+        },
+        {
+          "rank": 37,
+          "code": "22",
+          "name": "静岡県",
+          "value": 102523
+        },
+        {
+          "rank": 38,
+          "code": "37",
+          "name": "香川県",
+          "value": 102347
+        },
+        {
+          "rank": 39,
+          "code": "15",
+          "name": "新潟県",
+          "value": 98587
+        },
+        {
+          "rank": 40,
+          "code": "05",
+          "name": "秋田県",
+          "value": 98385
+        },
+        {
+          "rank": 41,
+          "code": "01",
+          "name": "北海道",
+          "value": 98170
+        },
+        {
+          "rank": 42,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 97595
+        },
+        {
+          "rank": 43,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 92613
+        },
+        {
+          "rank": 44,
+          "code": "26",
+          "name": "京都府",
+          "value": 74305
+        },
+        {
+          "rank": 45,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 69915
+        },
+        {
+          "rank": 46,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 67850
+        },
+        {
+          "rank": 47,
+          "code": "02",
+          "name": "青森県",
+          "value": 63646
+        }
+      ]
+    },
+    {
+      "key": "kenketsu",
+      "label": "献血率",
+      "unit": "%",
+      "source": "厚労省 献血率統計(2009)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "39",
+          "name": "高知県",
+          "value": 7.7
+        },
+        {
+          "rank": 2,
+          "code": "01",
+          "name": "北海道",
+          "value": 7.4
+        },
+        {
+          "rank": 3,
+          "code": "43",
+          "name": "熊本県",
+          "value": 7
+        },
+        {
+          "rank": 4,
+          "code": "05",
+          "name": "秋田県",
+          "value": 7
+        },
+        {
+          "rank": 5,
+          "code": "42",
+          "name": "長崎県",
+          "value": 6.8
+        },
+        {
+          "rank": 6,
+          "code": "07",
+          "name": "福島県",
+          "value": 6.7
+        },
+        {
+          "rank": 7,
+          "code": "33",
+          "name": "岡山県",
+          "value": 6.6
+        },
+        {
+          "rank": 8,
+          "code": "34",
+          "name": "広島県",
+          "value": 6.6
+        },
+        {
+          "rank": 9,
+          "code": "13",
+          "name": "東京都",
+          "value": 6.5
+        },
+        {
+          "rank": 10,
+          "code": "18",
+          "name": "福井県",
+          "value": 6.5
+        },
+        {
+          "rank": 11,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 6.5
+        },
+        {
+          "rank": 12,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 6.5
+        },
+        {
+          "rank": 13,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 6.5
+        },
+        {
+          "rank": 14,
+          "code": "27",
+          "name": "大阪府",
+          "value": 6.4
+        },
+        {
+          "rank": 15,
+          "code": "03",
+          "name": "岩手県",
+          "value": 6.4
+        },
+        {
+          "rank": 16,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 6.3
+        },
+        {
+          "rank": 17,
+          "code": "35",
+          "name": "山口県",
+          "value": 6.3
+        },
+        {
+          "rank": 18,
+          "code": "10",
+          "name": "群馬県",
+          "value": 6.2
+        },
+        {
+          "rank": 19,
+          "code": "19",
+          "name": "山梨県",
+          "value": 6.2
+        },
+        {
+          "rank": 20,
+          "code": "26",
+          "name": "京都府",
+          "value": 6.2
+        },
+        {
+          "rank": 21,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 6.2
+        },
+        {
+          "rank": 22,
+          "code": "36",
+          "name": "徳島県",
+          "value": 6.1
+        },
+        {
+          "rank": 23,
+          "code": "37",
+          "name": "香川県",
+          "value": 6.1
+        },
+        {
+          "rank": 24,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 6.1
+        },
+        {
+          "rank": 25,
+          "code": "44",
+          "name": "大分県",
+          "value": 6.1
+        },
+        {
+          "rank": 26,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 6.1
+        },
+        {
+          "rank": 27,
+          "code": "15",
+          "name": "新潟県",
+          "value": 6
+        },
+        {
+          "rank": 28,
+          "code": "02",
+          "name": "青森県",
+          "value": 6
+        },
+        {
+          "rank": 29,
+          "code": "16",
+          "name": "富山県",
+          "value": 5.9
+        },
+        {
+          "rank": 30,
+          "code": "23",
+          "name": "愛知県",
+          "value": 5.9
+        },
+        {
+          "rank": 31,
+          "code": "09",
+          "name": "栃木県",
+          "value": 5.9
+        },
+        {
+          "rank": 32,
+          "code": "32",
+          "name": "島根県",
+          "value": 5.8
+        },
+        {
+          "rank": 33,
+          "code": "20",
+          "name": "長野県",
+          "value": 5.7
+        },
+        {
+          "rank": 34,
+          "code": "40",
+          "name": "福岡県",
+          "value": 5.6
+        },
+        {
+          "rank": 35,
+          "code": "04",
+          "name": "宮城県",
+          "value": 5.6
+        },
+        {
+          "rank": 36,
+          "code": "12",
+          "name": "千葉県",
+          "value": 5.5
+        },
+        {
+          "rank": 37,
+          "code": "29",
+          "name": "奈良県",
+          "value": 5.5
+        },
+        {
+          "rank": 38,
+          "code": "06",
+          "name": "山形県",
+          "value": 5.5
+        },
+        {
+          "rank": 39,
+          "code": "17",
+          "name": "石川県",
+          "value": 5.3
+        },
+        {
+          "rank": 40,
+          "code": "22",
+          "name": "静岡県",
+          "value": 5.3
+        },
+        {
+          "rank": 41,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 5.3
+        },
+        {
+          "rank": 42,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 5.2
+        },
+        {
+          "rank": 43,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 5
+        },
+        {
+          "rank": 44,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 4.8
+        },
+        {
+          "rank": 45,
+          "code": "08",
+          "name": "茨城県",
+          "value": 4.7
+        },
+        {
+          "rank": 46,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 4.6
+        },
+        {
+          "rank": 47,
+          "code": "24",
+          "name": "三重県",
+          "value": 4.4
+        }
+      ]
+    },
+    {
+      "key": "volunteer",
+      "label": "ボランティア行動者率",
+      "unit": "%",
+      "source": "社会生活基本調査(2021)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "32",
+          "name": "島根県",
+          "value": 25.6
+        },
+        {
+          "rank": 2,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 24.8
+        },
+        {
+          "rank": 3,
+          "code": "03",
+          "name": "岩手県",
+          "value": 24.4
+        },
+        {
+          "rank": 4,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 24.2
+        },
+        {
+          "rank": 5,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 24.1
+        },
+        {
+          "rank": 6,
+          "code": "06",
+          "name": "山形県",
+          "value": 23.6
+        },
+        {
+          "rank": 7,
+          "code": "33",
+          "name": "岡山県",
+          "value": 23.2
+        },
+        {
+          "rank": 8,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 22.3
+        },
+        {
+          "rank": 9,
+          "code": "43",
+          "name": "熊本県",
+          "value": 22.1
+        },
+        {
+          "rank": 10,
+          "code": "20",
+          "name": "長野県",
+          "value": 22
+        },
+        {
+          "rank": 11,
+          "code": "18",
+          "name": "福井県",
+          "value": 21.7
+        },
+        {
+          "rank": 12,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 21.7
+        },
+        {
+          "rank": 13,
+          "code": "19",
+          "name": "山梨県",
+          "value": 21.1
+        },
+        {
+          "rank": 14,
+          "code": "42",
+          "name": "長崎県",
+          "value": 21
+        },
+        {
+          "rank": 15,
+          "code": "05",
+          "name": "秋田県",
+          "value": 20.9
+        },
+        {
+          "rank": 16,
+          "code": "17",
+          "name": "石川県",
+          "value": 20.7
+        },
+        {
+          "rank": 17,
+          "code": "04",
+          "name": "宮城県",
+          "value": 20.7
+        },
+        {
+          "rank": 18,
+          "code": "44",
+          "name": "大分県",
+          "value": 20.3
+        },
+        {
+          "rank": 19,
+          "code": "35",
+          "name": "山口県",
+          "value": 20.1
+        },
+        {
+          "rank": 20,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 20.1
+        },
+        {
+          "rank": 21,
+          "code": "07",
+          "name": "福島県",
+          "value": 19.7
+        },
+        {
+          "rank": 22,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 19.6
+        },
+        {
+          "rank": 23,
+          "code": "16",
+          "name": "富山県",
+          "value": 19.5
+        },
+        {
+          "rank": 24,
+          "code": "15",
+          "name": "新潟県",
+          "value": 19.3
+        },
+        {
+          "rank": 25,
+          "code": "24",
+          "name": "三重県",
+          "value": 19.3
+        },
+        {
+          "rank": 26,
+          "code": "10",
+          "name": "群馬県",
+          "value": 19.2
+        },
+        {
+          "rank": 27,
+          "code": "40",
+          "name": "福岡県",
+          "value": 19.1
+        },
+        {
+          "rank": 28,
+          "code": "22",
+          "name": "静岡県",
+          "value": 18.9
+        },
+        {
+          "rank": 29,
+          "code": "39",
+          "name": "高知県",
+          "value": 18.9
+        },
+        {
+          "rank": 30,
+          "code": "34",
+          "name": "広島県",
+          "value": 18.6
+        },
+        {
+          "rank": 31,
+          "code": "29",
+          "name": "奈良県",
+          "value": 18.5
+        },
+        {
+          "rank": 32,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 18.2
+        },
+        {
+          "rank": 33,
+          "code": "37",
+          "name": "香川県",
+          "value": 18.1
+        },
+        {
+          "rank": 34,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 17.7
+        },
+        {
+          "rank": 35,
+          "code": "36",
+          "name": "徳島県",
+          "value": 17.4
+        },
+        {
+          "rank": 36,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 17.4
+        },
+        {
+          "rank": 37,
+          "code": "08",
+          "name": "茨城県",
+          "value": 17.1
+        },
+        {
+          "rank": 38,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 17
+        },
+        {
+          "rank": 39,
+          "code": "23",
+          "name": "愛知県",
+          "value": 16.6
+        },
+        {
+          "rank": 40,
+          "code": "26",
+          "name": "京都府",
+          "value": 16.6
+        },
+        {
+          "rank": 41,
+          "code": "09",
+          "name": "栃木県",
+          "value": 16.5
+        },
+        {
+          "rank": 42,
+          "code": "01",
+          "name": "北海道",
+          "value": 16.3
+        },
+        {
+          "rank": 43,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 15.6
+        },
+        {
+          "rank": 44,
+          "code": "13",
+          "name": "東京都",
+          "value": 15.5
+        },
+        {
+          "rank": 45,
+          "code": "12",
+          "name": "千葉県",
+          "value": 14.9
+        },
+        {
+          "rank": 46,
+          "code": "27",
+          "name": "大阪府",
+          "value": 14.5
+        },
+        {
+          "rank": 47,
+          "code": "02",
+          "name": "青森県",
+          "value": 14
+        }
+      ]
+    },
+    {
+      "key": "culture",
+      "label": "教養娯楽費の割合",
+      "unit": "%",
+      "source": "家計調査(2024)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "13",
+          "name": "東京都",
+          "value": 11
+        },
+        {
+          "rank": 2,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 10.8
+        },
+        {
+          "rank": 3,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 10.7
+        },
+        {
+          "rank": 4,
+          "code": "23",
+          "name": "愛知県",
+          "value": 10.6
+        },
+        {
+          "rank": 5,
+          "code": "26",
+          "name": "京都府",
+          "value": 10.6
+        },
+        {
+          "rank": 6,
+          "code": "40",
+          "name": "福岡県",
+          "value": 10.6
+        },
+        {
+          "rank": 7,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 10.5
+        },
+        {
+          "rank": 8,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 10.3
+        },
+        {
+          "rank": 9,
+          "code": "10",
+          "name": "群馬県",
+          "value": 10.1
+        },
+        {
+          "rank": 10,
+          "code": "24",
+          "name": "三重県",
+          "value": 10
+        },
+        {
+          "rank": 11,
+          "code": "29",
+          "name": "奈良県",
+          "value": 10
+        },
+        {
+          "rank": 12,
+          "code": "34",
+          "name": "広島県",
+          "value": 10
+        },
+        {
+          "rank": 13,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 9.9
+        },
+        {
+          "rank": 14,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 9.8
+        },
+        {
+          "rank": 15,
+          "code": "33",
+          "name": "岡山県",
+          "value": 9.8
+        },
+        {
+          "rank": 16,
+          "code": "36",
+          "name": "徳島県",
+          "value": 9.8
+        },
+        {
+          "rank": 17,
+          "code": "12",
+          "name": "千葉県",
+          "value": 9.7
+        },
+        {
+          "rank": 18,
+          "code": "27",
+          "name": "大阪府",
+          "value": 9.7
+        },
+        {
+          "rank": 19,
+          "code": "08",
+          "name": "茨城県",
+          "value": 9.6
+        },
+        {
+          "rank": 20,
+          "code": "16",
+          "name": "富山県",
+          "value": 9.5
+        },
+        {
+          "rank": 21,
+          "code": "20",
+          "name": "長野県",
+          "value": 9.5
+        },
+        {
+          "rank": 22,
+          "code": "32",
+          "name": "島根県",
+          "value": 9.5
+        },
+        {
+          "rank": 23,
+          "code": "06",
+          "name": "山形県",
+          "value": 9.4
+        },
+        {
+          "rank": 24,
+          "code": "01",
+          "name": "北海道",
+          "value": 9.3
+        },
+        {
+          "rank": 25,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 9.1
+        },
+        {
+          "rank": 26,
+          "code": "19",
+          "name": "山梨県",
+          "value": 8.9
+        },
+        {
+          "rank": 27,
+          "code": "35",
+          "name": "山口県",
+          "value": 8.9
+        },
+        {
+          "rank": 28,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 8.9
+        },
+        {
+          "rank": 29,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 8.8
+        },
+        {
+          "rank": 30,
+          "code": "05",
+          "name": "秋田県",
+          "value": 8.8
+        },
+        {
+          "rank": 31,
+          "code": "09",
+          "name": "栃木県",
+          "value": 8.8
+        },
+        {
+          "rank": 32,
+          "code": "03",
+          "name": "岩手県",
+          "value": 8.7
+        },
+        {
+          "rank": 33,
+          "code": "07",
+          "name": "福島県",
+          "value": 8.7
+        },
+        {
+          "rank": 34,
+          "code": "17",
+          "name": "石川県",
+          "value": 8.6
+        },
+        {
+          "rank": 35,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 8.6
+        },
+        {
+          "rank": 36,
+          "code": "43",
+          "name": "熊本県",
+          "value": 8.6
+        },
+        {
+          "rank": 37,
+          "code": "22",
+          "name": "静岡県",
+          "value": 8.5
+        },
+        {
+          "rank": 38,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 8.5
+        },
+        {
+          "rank": 39,
+          "code": "02",
+          "name": "青森県",
+          "value": 8.3
+        },
+        {
+          "rank": 40,
+          "code": "04",
+          "name": "宮城県",
+          "value": 8.3
+        },
+        {
+          "rank": 41,
+          "code": "37",
+          "name": "香川県",
+          "value": 8.1
+        },
+        {
+          "rank": 42,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 8.1
+        },
+        {
+          "rank": 43,
+          "code": "44",
+          "name": "大分県",
+          "value": 8
+        },
+        {
+          "rank": 44,
+          "code": "15",
+          "name": "新潟県",
+          "value": 7.8
+        },
+        {
+          "rank": 45,
+          "code": "18",
+          "name": "福井県",
+          "value": 7.6
+        },
+        {
+          "rank": 46,
+          "code": "39",
+          "name": "高知県",
+          "value": 7.6
+        },
+        {
+          "rank": 47,
+          "code": "42",
+          "name": "長崎県",
+          "value": 7.5
+        }
+      ]
+    },
+    {
+      "key": "books",
+      "label": "書籍・雑誌購入額(人口1人あたり)",
+      "unit": "円",
+      "source": "社会・人口統計体系(2006)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "13",
+          "name": "東京都",
+          "value": 40070
+        },
+        {
+          "rank": 2,
+          "code": "23",
+          "name": "愛知県",
+          "value": 18680
+        },
+        {
+          "rank": 3,
+          "code": "27",
+          "name": "大阪府",
+          "value": 17934
+        },
+        {
+          "rank": 4,
+          "code": "26",
+          "name": "京都府",
+          "value": 17369
+        },
+        {
+          "rank": 5,
+          "code": "15",
+          "name": "新潟県",
+          "value": 17355
+        },
+        {
+          "rank": 6,
+          "code": "17",
+          "name": "石川県",
+          "value": 17236
+        },
+        {
+          "rank": 7,
+          "code": "16",
+          "name": "富山県",
+          "value": 16693
+        },
+        {
+          "rank": 8,
+          "code": "37",
+          "name": "香川県",
+          "value": 16122
+        },
+        {
+          "rank": 9,
+          "code": "18",
+          "name": "福井県",
+          "value": 15776
+        },
+        {
+          "rank": 10,
+          "code": "34",
+          "name": "広島県",
+          "value": 15647
+        },
+        {
+          "rank": 11,
+          "code": "33",
+          "name": "岡山県",
+          "value": 15419
+        },
+        {
+          "rank": 12,
+          "code": "20",
+          "name": "長野県",
+          "value": 15066
+        },
+        {
+          "rank": 13,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 15003
+        },
+        {
+          "rank": 14,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 14834
+        },
+        {
+          "rank": 15,
+          "code": "04",
+          "name": "宮城県",
+          "value": 14752
+        },
+        {
+          "rank": 16,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 14381
+        },
+        {
+          "rank": 17,
+          "code": "01",
+          "name": "北海道",
+          "value": 14173
+        },
+        {
+          "rank": 18,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 13810
+        },
+        {
+          "rank": 19,
+          "code": "40",
+          "name": "福岡県",
+          "value": 13788
+        },
+        {
+          "rank": 20,
+          "code": "35",
+          "name": "山口県",
+          "value": 13761
+        },
+        {
+          "rank": 21,
+          "code": "06",
+          "name": "山形県",
+          "value": 13594
+        },
+        {
+          "rank": 22,
+          "code": "10",
+          "name": "群馬県",
+          "value": 13465
+        },
+        {
+          "rank": 23,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 13308
+        },
+        {
+          "rank": 24,
+          "code": "09",
+          "name": "栃木県",
+          "value": 13301
+        },
+        {
+          "rank": 25,
+          "code": "02",
+          "name": "青森県",
+          "value": 13275
+        },
+        {
+          "rank": 26,
+          "code": "44",
+          "name": "大分県",
+          "value": 13257
+        },
+        {
+          "rank": 27,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 13025
+        },
+        {
+          "rank": 28,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 12861
+        },
+        {
+          "rank": 29,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 12841
+        },
+        {
+          "rank": 30,
+          "code": "39",
+          "name": "高知県",
+          "value": 12816
+        },
+        {
+          "rank": 31,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 12783
+        },
+        {
+          "rank": 32,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 12676
+        },
+        {
+          "rank": 33,
+          "code": "07",
+          "name": "福島県",
+          "value": 12573
+        },
+        {
+          "rank": 34,
+          "code": "22",
+          "name": "静岡県",
+          "value": 12558
+        },
+        {
+          "rank": 35,
+          "code": "42",
+          "name": "長崎県",
+          "value": 12472
+        },
+        {
+          "rank": 36,
+          "code": "32",
+          "name": "島根県",
+          "value": 12346
+        },
+        {
+          "rank": 37,
+          "code": "12",
+          "name": "千葉県",
+          "value": 12122
+        },
+        {
+          "rank": 38,
+          "code": "05",
+          "name": "秋田県",
+          "value": 12070
+        },
+        {
+          "rank": 39,
+          "code": "36",
+          "name": "徳島県",
+          "value": 11594
+        },
+        {
+          "rank": 40,
+          "code": "29",
+          "name": "奈良県",
+          "value": 11531
+        },
+        {
+          "rank": 41,
+          "code": "03",
+          "name": "岩手県",
+          "value": 11436
+        },
+        {
+          "rank": 42,
+          "code": "24",
+          "name": "三重県",
+          "value": 11396
+        },
+        {
+          "rank": 43,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 11049
+        },
+        {
+          "rank": 44,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 11014
+        },
+        {
+          "rank": 45,
+          "code": "43",
+          "name": "熊本県",
+          "value": 10920
+        },
+        {
+          "rank": 46,
+          "code": "19",
+          "name": "山梨県",
+          "value": 10531
+        },
+        {
+          "rank": 47,
+          "code": "08",
+          "name": "茨城県",
+          "value": 9748
+        }
+      ]
+    },
+    {
+      "key": "library",
+      "label": "図書館貸出冊数(人口1人あたり)",
+      "unit": "冊",
+      "source": "社会教育調査(2014年度)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 7.8
+        },
+        {
+          "rank": 2,
+          "code": "13",
+          "name": "東京都",
+          "value": 7.3
+        },
+        {
+          "rank": 3,
+          "code": "35",
+          "name": "山口県",
+          "value": 7.2
+        },
+        {
+          "rank": 4,
+          "code": "18",
+          "name": "福井県",
+          "value": 7
+        },
+        {
+          "rank": 5,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 6.7
+        },
+        {
+          "rank": 6,
+          "code": "37",
+          "name": "香川県",
+          "value": 6.7
+        },
+        {
+          "rank": 7,
+          "code": "27",
+          "name": "大阪府",
+          "value": 6.5
+        },
+        {
+          "rank": 8,
+          "code": "33",
+          "name": "岡山県",
+          "value": 6.2
+        },
+        {
+          "rank": 9,
+          "code": "19",
+          "name": "山梨県",
+          "value": 6.1
+        },
+        {
+          "rank": 10,
+          "code": "22",
+          "name": "静岡県",
+          "value": 6.1
+        },
+        {
+          "rank": 11,
+          "code": "17",
+          "name": "石川県",
+          "value": 5.9
+        },
+        {
+          "rank": 12,
+          "code": "20",
+          "name": "長野県",
+          "value": 5.9
+        },
+        {
+          "rank": 13,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 5.9
+        },
+        {
+          "rank": 14,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 5.8
+        },
+        {
+          "rank": 15,
+          "code": "23",
+          "name": "愛知県",
+          "value": 5.7
+        },
+        {
+          "rank": 16,
+          "code": "36",
+          "name": "徳島県",
+          "value": 5.7
+        },
+        {
+          "rank": 17,
+          "code": "26",
+          "name": "京都府",
+          "value": 5.6
+        },
+        {
+          "rank": 18,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 5.4
+        },
+        {
+          "rank": 19,
+          "code": "16",
+          "name": "富山県",
+          "value": 5.4
+        },
+        {
+          "rank": 20,
+          "code": "29",
+          "name": "奈良県",
+          "value": 5.4
+        },
+        {
+          "rank": 21,
+          "code": "32",
+          "name": "島根県",
+          "value": 5.4
+        },
+        {
+          "rank": 22,
+          "code": "34",
+          "name": "広島県",
+          "value": 5.4
+        },
+        {
+          "rank": 23,
+          "code": "09",
+          "name": "栃木県",
+          "value": 5.3
+        },
+        {
+          "rank": 24,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 5.2
+        },
+        {
+          "rank": 25,
+          "code": "24",
+          "name": "三重県",
+          "value": 5.1
+        },
+        {
+          "rank": 26,
+          "code": "12",
+          "name": "千葉県",
+          "value": 5
+        },
+        {
+          "rank": 27,
+          "code": "15",
+          "name": "新潟県",
+          "value": 5
+        },
+        {
+          "rank": 28,
+          "code": "08",
+          "name": "茨城県",
+          "value": 5
+        },
+        {
+          "rank": 29,
+          "code": "10",
+          "name": "群馬県",
+          "value": 4.9
+        },
+        {
+          "rank": 30,
+          "code": "42",
+          "name": "長崎県",
+          "value": 4.9
+        },
+        {
+          "rank": 31,
+          "code": "40",
+          "name": "福岡県",
+          "value": 4.8
+        },
+        {
+          "rank": 32,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 4.7
+        },
+        {
+          "rank": 33,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 4.7
+        },
+        {
+          "rank": 34,
+          "code": "03",
+          "name": "岩手県",
+          "value": 4.1
+        },
+        {
+          "rank": 35,
+          "code": "44",
+          "name": "大分県",
+          "value": 4
+        },
+        {
+          "rank": 36,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 4
+        },
+        {
+          "rank": 37,
+          "code": "01",
+          "name": "北海道",
+          "value": 4
+        },
+        {
+          "rank": 38,
+          "code": "06",
+          "name": "山形県",
+          "value": 4
+        },
+        {
+          "rank": 39,
+          "code": "39",
+          "name": "高知県",
+          "value": 3.8
+        },
+        {
+          "rank": 40,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 3.7
+        },
+        {
+          "rank": 41,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 3.5
+        },
+        {
+          "rank": 42,
+          "code": "04",
+          "name": "宮城県",
+          "value": 3.5
+        },
+        {
+          "rank": 43,
+          "code": "43",
+          "name": "熊本県",
+          "value": 3.4
+        },
+        {
+          "rank": 44,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 3.4
+        },
+        {
+          "rank": 45,
+          "code": "07",
+          "name": "福島県",
+          "value": 3.4
+        },
+        {
+          "rank": 46,
+          "code": "02",
+          "name": "青森県",
+          "value": 3.1
+        },
+        {
+          "rank": 47,
+          "code": "05",
+          "name": "秋田県",
+          "value": 2.9
+        }
+      ]
+    },
+    {
+      "key": "dualincome",
+      "label": "共働き世帯割合(一般世帯全体に占める割合)",
+      "unit": "%",
+      "source": "社会・人口統計体系(2020)",
+      "ranking": [
+        {
+          "rank": 1,
+          "code": "18",
+          "name": "福井県",
+          "value": 34.69
+        },
+        {
+          "rank": 2,
+          "code": "06",
+          "name": "山形県",
+          "value": 34.4
+        },
+        {
+          "rank": 3,
+          "code": "16",
+          "name": "富山県",
+          "value": 32.83
+        },
+        {
+          "rank": 4,
+          "code": "20",
+          "name": "長野県",
+          "value": 31.4
+        },
+        {
+          "rank": 5,
+          "code": "32",
+          "name": "島根県",
+          "value": 31.22
+        },
+        {
+          "rank": 6,
+          "code": "15",
+          "name": "新潟県",
+          "value": 31.03
+        },
+        {
+          "rank": 7,
+          "code": "41",
+          "name": "佐賀県",
+          "value": 30.93
+        },
+        {
+          "rank": 8,
+          "code": "21",
+          "name": "岐阜県",
+          "value": 30.87
+        },
+        {
+          "rank": 9,
+          "code": "31",
+          "name": "鳥取県",
+          "value": 30
+        },
+        {
+          "rank": 10,
+          "code": "17",
+          "name": "石川県",
+          "value": 29.99
+        },
+        {
+          "rank": 11,
+          "code": "05",
+          "name": "秋田県",
+          "value": 29.38
+        },
+        {
+          "rank": 12,
+          "code": "19",
+          "name": "山梨県",
+          "value": 29.25
+        },
+        {
+          "rank": 13,
+          "code": "22",
+          "name": "静岡県",
+          "value": 29
+        },
+        {
+          "rank": 14,
+          "code": "03",
+          "name": "岩手県",
+          "value": 28.7
+        },
+        {
+          "rank": 15,
+          "code": "25",
+          "name": "滋賀県",
+          "value": 28.53
+        },
+        {
+          "rank": 16,
+          "code": "10",
+          "name": "群馬県",
+          "value": 28.41
+        },
+        {
+          "rank": 17,
+          "code": "24",
+          "name": "三重県",
+          "value": 27.63
+        },
+        {
+          "rank": 18,
+          "code": "43",
+          "name": "熊本県",
+          "value": 27.55
+        },
+        {
+          "rank": 19,
+          "code": "09",
+          "name": "栃木県",
+          "value": 27.39
+        },
+        {
+          "rank": 20,
+          "code": "07",
+          "name": "福島県",
+          "value": 27.37
+        },
+        {
+          "rank": 21,
+          "code": "02",
+          "name": "青森県",
+          "value": 26.99
+        },
+        {
+          "rank": 22,
+          "code": "08",
+          "name": "茨城県",
+          "value": 26.72
+        },
+        {
+          "rank": 23,
+          "code": "45",
+          "name": "宮崎県",
+          "value": 26.52
+        },
+        {
+          "rank": 24,
+          "code": "37",
+          "name": "香川県",
+          "value": 26.45
+        },
+        {
+          "rank": 25,
+          "code": "42",
+          "name": "長崎県",
+          "value": 26
+        },
+        {
+          "rank": 26,
+          "code": "36",
+          "name": "徳島県",
+          "value": 25.92
+        },
+        {
+          "rank": 27,
+          "code": "23",
+          "name": "愛知県",
+          "value": 25.84
+        },
+        {
+          "rank": 28,
+          "code": "30",
+          "name": "和歌山県",
+          "value": 25.77
+        },
+        {
+          "rank": 29,
+          "code": "33",
+          "name": "岡山県",
+          "value": 25.73
+        },
+        {
+          "rank": 30,
+          "code": "44",
+          "name": "大分県",
+          "value": 25.44
+        },
+        {
+          "rank": 31,
+          "code": "34",
+          "name": "広島県",
+          "value": 24.96
+        },
+        {
+          "rank": 32,
+          "code": "46",
+          "name": "鹿児島県",
+          "value": 24.89
+        },
+        {
+          "rank": 33,
+          "code": "04",
+          "name": "宮城県",
+          "value": 24.59
+        },
+        {
+          "rank": 34,
+          "code": "11",
+          "name": "埼玉県",
+          "value": 24.26
+        },
+        {
+          "rank": 35,
+          "code": "29",
+          "name": "奈良県",
+          "value": 24.07
+        },
+        {
+          "rank": 36,
+          "code": "35",
+          "name": "山口県",
+          "value": 24.06
+        },
+        {
+          "rank": 37,
+          "code": "38",
+          "name": "愛媛県",
+          "value": 23.79
+        },
+        {
+          "rank": 38,
+          "code": "39",
+          "name": "高知県",
+          "value": 23.38
+        },
+        {
+          "rank": 39,
+          "code": "12",
+          "name": "千葉県",
+          "value": 23.13
+        },
+        {
+          "rank": 40,
+          "code": "28",
+          "name": "兵庫県",
+          "value": 22.79
+        },
+        {
+          "rank": 41,
+          "code": "14",
+          "name": "神奈川県",
+          "value": 21.87
+        },
+        {
+          "rank": 42,
+          "code": "40",
+          "name": "福岡県",
+          "value": 21.6
+        },
+        {
+          "rank": 43,
+          "code": "01",
+          "name": "北海道",
+          "value": 20.71
+        },
+        {
+          "rank": 44,
+          "code": "47",
+          "name": "沖縄県",
+          "value": 20.64
+        },
+        {
+          "rank": 45,
+          "code": "26",
+          "name": "京都府",
+          "value": 20.57
+        },
+        {
+          "rank": 46,
+          "code": "27",
+          "name": "大阪府",
+          "value": 18.75
+        },
+        {
+          "rank": 47,
+          "code": "13",
+          "name": "東京都",
+          "value": 17.43
+        }
+      ]
+    }
+  ]
+}

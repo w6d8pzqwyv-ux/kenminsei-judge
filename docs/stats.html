@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>地域統計ランキング(試作)</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    background: linear-gradient(135deg, #F6F3EE 0%, #EDE7DC 100%);
+    padding: 24px 32px 60px;
+    margin: 0;
+    color: #23342E;
+  }
+  nav { margin-bottom: 14px; }
+  nav a {
+    font-size: 14px; color: #2F6F5E; margin-right: 16px; text-decoration: none;
+    font-weight: 600; border-bottom: 2px solid transparent; padding-bottom: 2px;
+  }
+  nav a.active { border-bottom-color: #2F6F5E; }
+  h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: 0.02em; }
+  .sub { font-size: 14px; color: #6b7a74; margin-bottom: 16px; }
+  .disclaimer {
+    font-size: 14px; color: #6b5a1f; background: #FFF7E6; border: 1px solid #F0D999;
+    border-radius: 12px; padding: 14px 18px; margin: 0 0 20px; max-width: 720px; line-height: 1.7;
+  }
+  select {
+    font-size: 18px; padding: 10px 16px; margin-bottom: 20px; border-radius: 10px;
+    border: 2px solid #2F6F5E; background: #fff; color: #23342E; font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  }
+  table {
+    border-collapse: collapse; max-width: 560px; background: #fff; border-radius: 16px;
+    overflow: hidden; box-shadow: 0 8px 24px rgba(47,111,94,0.12); width: 100%;
+  }
+  th, td { padding: 10px 18px; text-align: left; font-size: 16px; }
+  th { background: #2F6F5E; color: #fff; font-size: 15px; }
+  tr:nth-child(even) { background: #faf8f4; }
+  tr:first-child td { font-weight: 800; color: #C56A47; }
+  .source { font-size: 13px; color: #888; margin-top: 12px; }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">県民性ジャッジ(診断)</a>
+    <a href="stats.html" class="active">地域統計ランキング</a>
+  </nav>
+  <h1>地域統計ランキング</h1>
+  <div class="sub">政府統計をカテゴリごとに、出典つきでそのまま紹介します(試作)</div>
+  <div class="disclaimer">
+    このコーナーは、政府統計等の事実を出典つきでそのまま紹介するものです。<br>
+    個人や地域の性格・人柄を評価・診断するものではありません。
+  </div>
+  <select id="catSelect"></select>
+  <table id="table"></table>
+  <div class="source" id="sourceText"></div>
+
+<script>
+let data = { categories: [] };
+
+async function load() {
+  const res = await fetch('stats.json');
+  data = await res.json();
+  const select = document.getElementById('catSelect');
+  data.categories.forEach((cat, i) => {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = cat.label;
+    select.appendChild(opt);
+  });
+  select.addEventListener('change', () => draw(select.value));
+  draw(0);
+}
+
+function draw(index) {
+  const cat = data.categories[index];
+  const rows = cat.ranking.map((r) =>
+    '<tr><td>' + r.rank + '位</td><td>' + r.name + '</td><td>' + r.value + cat.unit + '</td></tr>'
+  ).join('');
+  document.getElementById('table').innerHTML =
+    '<tr><th>順位</th><th>都道府県</th><th>' + cat.label + '</th></tr>' + rows;
+  document.getElementById('sourceText').textContent = '出典: ' + cat.source;
+}
+
+load();
+</script>
+</body>
+</html>

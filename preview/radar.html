@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>県民性ジャッジ - レーダーチャート試作</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    background: linear-gradient(135deg, #F6F3EE 0%, #EDE7DC 100%);
+    padding: 24px 32px 60px;
+    margin: 0;
+    color: #23342E;
+  }
+  nav { margin-bottom: 14px; }
+  nav a {
+    font-size: 14px; color: #2F6F5E; margin-right: 16px; text-decoration: none;
+    font-weight: 600; border-bottom: 2px solid transparent; padding-bottom: 2px;
+  }
+  nav a.active { border-bottom-color: #2F6F5E; }
+  h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: 0.02em; }
+  .sub { font-size: 14px; color: #6b7a74; margin-bottom: 18px; }
+
+  /* --- 都道府県ピッカー(地図+リール) --- */
+  .picker {
+    display: flex; gap: 24px; align-items: flex-start; max-width: 1240px;
+    background: #fff; border-radius: 20px; padding: 20px 24px;
+    box-shadow: 0 8px 24px rgba(47,111,94,0.12); margin-bottom: 20px;
+  }
+  .map-wrap { flex: 0 0 340px; }
+  #mapContainer svg { width: 100%; height: auto; display: block; }
+  #mapContainer .prefecture polygon,
+  #mapContainer .prefecture path {
+    fill: #EDE7DC; stroke: #9aa39c; stroke-width: 1; cursor: pointer;
+    transition: fill 0.12s ease;
+  }
+  #mapContainer .prefecture:hover polygon,
+  #mapContainer .prefecture:hover path { fill: #a9c9bd; }
+  #mapContainer .prefecture.selected polygon,
+  #mapContainer .prefecture.selected path { fill: #2F6F5E; stroke: #1c4a3d; }
+  .reel-area { flex: 1; min-width: 0; }
+  .reel-label { font-size: 14px; font-weight: 700; color: #2F6F5E; margin-bottom: 8px; }
+  .reel {
+    display: flex; flex-wrap: wrap; gap: 8px; max-height: 320px; overflow-y: auto;
+    padding-right: 4px;
+  }
+  .reel button {
+    font-size: 15px; padding: 8px 14px; border-radius: 999px; border: 2px solid #d8d2c4;
+    background: #FBFAF7; color: #23342E; cursor: pointer; font-weight: 600;
+    transition: all 0.12s ease;
+  }
+  .reel button:hover { border-color: #2F6F5E; }
+  .reel button.selected { background: #2F6F5E; border-color: #2F6F5E; color: #fff; }
+
+  .layout { display: flex; gap: 28px; align-items: flex-start; max-width: 1240px; }
+  .left {
+    flex: 0 0 480px; background: #fff; border-radius: 20px; padding: 28px;
+    box-shadow: 0 8px 24px rgba(47,111,94,0.15); position: sticky; top: 20px;
+    text-align: center;
+  }
+  .axis-label { font-size: 17px; font-weight: 700; fill: #23342E; }
+  .note { font-size: 18px; color: #333; margin-top: 18px; line-height: 1.9; text-align: left; }
+  .note b { color: #2F6F5E; font-size: 20px; }
+  .right { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .axis-block {
+    background: #fff; border-radius: 16px; padding: 18px 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08); border-left: 5px solid #2F6F5E;
+  }
+  .axis-title { font-size: 18px; font-weight: 800; color: #2F6F5E; margin-bottom: 6px; }
+  .axis-comment { font-size: 15px; color: #333; margin: 4px 0 10px; line-height: 1.6; }
+  .detail-list { font-size: 13px; color: #667; margin: 0; padding-left: 20px; line-height: 1.8; }
+  @media (max-width: 900px) {
+    .layout { flex-direction: column; }
+    .left { position: static; width: 100%; flex-basis: auto; }
+    .right { grid-template-columns: 1fr; }
+    .picker { flex-direction: column; }
+    .map-wrap { flex-basis: auto; max-width: 280px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="radar.html" class="active">県民性ジャッジ(診断)</a>
+    <a href="stats.html">地域統計ランキング</a>
+  </nav>
+  <h1>県民性ジャッジ</h1>
+  <div class="sub">出身地を選ぶと、5つの軸であなたの県の傾向がわかります(試作)</div>
+
+  <div class="picker">
+    <div class="map-wrap" id="mapContainer"></div>
+    <div class="reel-area">
+      <div class="reel-label">都道府県から選ぶ</div>
+      <div class="reel" id="reel"></div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="left">
+      <svg id="chart" viewBox="0 0 420 420" width="420" height="420"></svg>
+      <div class="note" id="scoreText"></div>
+    </div>
+    <div class="right" id="axisDetails"></div>
+  </div>
+
+<script>
+const AXES = ['行動力', '社交性', 'きちょうめん度', '人情深さ', '好奇心'];
+let scores = {};
+let currentCode = '13';
+
+async function load() {
+  const [scoresRes, mapRes] = await Promise.all([
+    fetch('scores.json'),
+    fetch('japan-map.svg'),
+  ]);
+  scores = await scoresRes.json();
+  const mapSvgText = await mapRes.text();
+  document.getElementById('mapContainer').innerHTML = mapSvgText;
+
+  // 地図クリックで選択
+  document.querySelectorAll('#mapContainer .prefecture').forEach((g) => {
+    g.addEventListener('click', () => {
+      const code = g.getAttribute('data-code').padStart(2, '0');
+      select(code);
+    });
+  });
+
+  // リール(都道府県ボタン)を生成
+  const reel = document.getElementById('reel');
+  Object.keys(scores).sort().forEach((code) => {
+    const btn = document.createElement('button');
+    btn.textContent = scores[code].name;
+    btn.dataset.code = code;
+    btn.addEventListener('click', () => select(code));
+    reel.appendChild(btn);
+  });
+
+  select('13'); // 東京都をデフォルト表示
+}
+
+function select(code) {
+  currentCode = code;
+
+  // 地図のハイライト更新
+  document.querySelectorAll('#mapContainer .prefecture').forEach((g) => {
+    const c = g.getAttribute('data-code').padStart(2, '0');
+    g.classList.toggle('selected', c === code);
+  });
+  // リールのハイライト更新
+  document.querySelectorAll('#reel button').forEach((btn) => {
+    btn.classList.toggle('selected', btn.dataset.code === code);
+  });
+
+  draw(code);
+}
+
+function polarPoint(cx, cy, r, angleDeg) {
+  const rad = (Math.PI / 180) * (angleDeg - 90);
+  return [cx + r * Math.cos(rad), cy + r * Math.sin(rad)];
+}
+
+function draw(code) {
+  const cx = 210, cy = 210, maxR = 150;
+  const data = scores[code];
+  const values = AXES.map(a => data.axes[a].score);
+
+  let svg = '';
+  // 背景の同心五角形(2,4,6,8,10点の目安線)
+  [2,4,6,8,10].forEach(level => {
+    const r = (level / 10) * maxR;
+    const pts = AXES.map((_, i) => polarPoint(cx, cy, r, i * 72).join(',')).join(' ');
+    svg += '<polygon points="' + pts + '" fill="none" stroke="#e2ddd2" stroke-width="1.5" />';
+  });
+  // 軸線
+  AXES.forEach((_, i) => {
+    const [x, y] = polarPoint(cx, cy, maxR, i * 72);
+    svg += '<line x1="' + cx + '" y1="' + cy + '" x2="' + x + '" y2="' + y + '" stroke="#d8d2c4" stroke-width="1.5" />';
+  });
+  // データ多角形
+  const dataPts = AXES.map((_, i) => polarPoint(cx, cy, (values[i] / 10) * maxR, i * 72).join(',')).join(' ');
+  svg += '<polygon points="' + dataPts + '" fill="#2F6F5E" fill-opacity="0.4" stroke="#2F6F5E" stroke-width="3.5" stroke-linejoin="round" />';
+  // 頂点の丸印
+  AXES.forEach((_, i) => {
+    const [x, y] = polarPoint(cx, cy, (values[i] / 10) * maxR, i * 72);
+    svg += '<circle cx="' + x + '" cy="' + y + '" r="5" fill="#C56A47" />';
+  });
+  // ラベル
+  AXES.forEach((label, i) => {
+    const [x, y] = polarPoint(cx, cy, maxR + 34, i * 72);
+    svg += '<text class="axis-label" x="' + x + '" y="' + y + '" text-anchor="middle">' + label + '</text>';
+  });
+
+  document.getElementById('chart').innerHTML = svg;
+  document.getElementById('scoreText').innerHTML = '<b>' + data.name + '</b><br>' + AXES.map(a => {
+    const d = data.axes[a];
+    return a + ': <b>' + d.score + '点</b>(全国' + d.rank + '位)';
+  }).join('<br>');
+
+  document.getElementById('axisDetails').innerHTML = AXES.map(a => {
+    const d = data.axes[a];
+    const detailItems = d.detail.map(item =>
+      '<li>' + item.label + ': ' + item.value + item.unit + '(全国' + item.rank + '位)　出典: ' + item.source + '</li>'
+    ).join('');
+    return '<div class="axis-block">' +
+      '<div class="axis-title">' + a + '(' + d.score + '点・全国' + d.rank + '位)</div>' +
+      '<div class="axis-comment">' + d.comment + '</div>' +
+      '<ul class="detail-list">' + detailItems + '</ul>' +
+      '</div>';
+  }).join('');
+}
+
+load();
+</script>
+</body>
+</html>

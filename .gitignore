@@ -1,0 +1,6 @@
+# e-Stat APIキー(絶対に公開しない)
+data/estat_appid.txt
+
+# 作業用の一時ファイル
+data/tmp_*.json
+data/all_area_codes.txt

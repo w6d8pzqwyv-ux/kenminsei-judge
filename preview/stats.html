@@ -36,9 +36,13 @@
   table {
     border-collapse: collapse; max-width: 560px; background: #fff; border-radius: 16px;
     overflow: hidden; box-shadow: 0 8px 24px rgba(47,111,94,0.12); width: 100%;
+    table-layout: fixed;
   }
-  th, td { padding: 10px 18px; text-align: left; font-size: 16px; }
-  th { background: #2F6F5E; color: #fff; font-size: 15px; }
+  th, td { padding: 10px 10px; text-align: left; font-size: 16px; overflow-wrap: break-word; }
+  th:nth-child(1), td:nth-child(1) { width: 20%; white-space: nowrap; }
+  th:nth-child(2), td:nth-child(2) { width: 32%; white-space: nowrap; }
+  th:nth-child(3), td:nth-child(3) { width: 48%; }
+  th { background: #2F6F5E; color: #fff; font-size: 14px; }
   tr:nth-child(even) { background: #faf8f4; }
   tr:first-child td { font-weight: 800; color: #C56A47; }
   .source { font-size: 13px; color: #888; margin-top: 12px; }

@@ -2,7 +2,10 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<title>地域統計ランキング(試作)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>地域統計ランキング | 県民性ジャッジ</title>
+<meta name="description" content="都道府県別の公的統計(進学率・貯蓄率・共働き率など)を出典つきでそのまま紹介するランキングコーナー。性格診断ではなく事実の紹介です。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%232F6F5E'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='white' font-family='sans-serif'%3E%E7%9C%8C%3C/text%3E%3C/svg%3E" />
 <style>
   * { box-sizing: border-box; }
   body {
@@ -38,6 +41,10 @@
   tr:nth-child(even) { background: #faf8f4; }
   tr:first-child td { font-weight: 800; color: #C56A47; }
   .source { font-size: 13px; color: #888; margin-top: 12px; }
+  footer {
+    max-width: 1240px; margin-top: 28px; padding-top: 16px; border-top: 1px solid #ddd6c6;
+    font-size: 12px; color: #8a8578; line-height: 1.8;
+  }
 </style>
 </head>
 <body>
@@ -54,6 +61,10 @@
   <select id="catSelect"></select>
   <table id="table"></table>
   <div class="source" id="sourceText"></div>
+
+  <footer>
+    このコーナーで紹介する数値は各種公的統計・民間調査の事実をそのまま出典つきで掲載したものであり、個人や地域の性格・人柄を評価・診断するものではありません。
+  </footer>
 
 <script>
 let data = { categories: [] };

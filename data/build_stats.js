@@ -47,6 +47,11 @@ const CATEGORIES = [
   { key: 'books', label: '書籍・雑誌購入額(人口1人あたり)', unit: '円', source: '社会・人口統計体系(2006)', file: '13b_books.csv' },
   { key: 'library', label: '図書館貸出冊数(人口1人あたり)', unit: '冊', source: '社会教育調査(2014年度)', file: null },
   { key: 'dualincome', label: '共働き世帯割合(一般世帯全体に占める割合)', unit: '%', source: '社会・人口統計体系(2020)', file: '16_dualincome.csv' },
+  { key: 'tennyu', label: '転入率(日本人移動者)', unit: '%', source: '社会・人口統計体系(2024)', file: '17_tennyu.csv' },
+  { key: 'passport', label: '一般旅券発行件数(人口千人当たり)', unit: '件', source: '社会・人口統計体系(2024)', file: '18_passport.csv' },
+  { key: 'minsei', label: '民生委員(児童委員)数(人口10万人あたり)', unit: '人', source: '社会・人口統計体系(2023)', file: '19_minsei.csv' },
+  // 海外旅行行動者率(2021)はコロナ禍でノイズのため不掲載(2026-07-10 統括判断)
+  { key: 'gakuryoku', label: '全国学力調査 平均正答率(小中4区分平均)', unit: '%', source: '全国学力・学習状況調査(文科省・2024年度)', file: '09_gakuryoku.csv' },
 ];
 
 const categories = CATEGORIES.map((cat) => {

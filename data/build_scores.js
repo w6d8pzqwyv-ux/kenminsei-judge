@@ -74,14 +74,20 @@ const META = {
   '13b_books.csv': { label: '書籍・雑誌購入額(人口1人あたり)', unit: '円', source: '社会・人口統計体系(2006)' },
   '15_university.csv': { label: '大学等進学率', unit: '%', source: '学校基本調査(2023)' },
   LIBRARY_PERCAPITA: { label: '図書館貸出冊数(人口1人あたり)', unit: '冊', source: '社会教育調査(2014年度)' },
+  '09_gakuryoku.csv': { label: '全国学力調査 平均正答率(小中4区分平均)', unit: '%', source: '全国学力・学習状況調査(文科省・2024年度)' },
+  '17_tennyu.csv': { label: '転入率(日本人移動者)', unit: '%', source: '社会・人口統計体系(2024)' },
+  '18_passport.csv': { label: '一般旅券発行件数(人口千人当たり)', unit: '件', source: '社会・人口統計体系(2024)' },
+  '19_minsei.csv': { label: '民生委員(児童委員)数(人口10万人あたり)', unit: '人', source: '社会・人口統計体系(2023)' },
+  '20_kaigai.csv': { label: '海外旅行の年間行動者率(10歳以上)', unit: '%', source: '社会生活基本調査(2021)' },
 };
 
 // 5軸 × 材料指標(ファイル名)
 const AXES = {
-  行動力: ['01_sports.csv', '02_travel.csv'],
+  行動力: ['01_sports.csv', '02_travel.csv', '17_tennyu.csv', '18_passport.csv'],
   社交性: ['04_kousai.csv', '05_gaishoku.csv', '06_owarai.csv'],
-  きちょうめん度: ['07_savings.csv', '08_home.csv'],
-  人情深さ: ['10_volunteer.csv', '11_kenketsu.csv', '12_sansedai.csv'],
+  きちょうめん度: ['07_savings.csv', '08_home.csv', '09_gakuryoku.csv'],
+  人情深さ: ['10_volunteer.csv', '11_kenketsu.csv', '12_sansedai.csv', '19_minsei.csv'],
+  // 海外旅行行動者率(20_kaigai)は2021年=コロナ禍で値がノイズ(全県0.1-0.7%)のため不採用(2026-07-10 統括判断)
   好奇心: ['13_culture.csv', '13b_books.csv', '15_university.csv', 'LIBRARY_PERCAPITA'],
 };
 

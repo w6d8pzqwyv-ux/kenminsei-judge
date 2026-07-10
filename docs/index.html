@@ -65,6 +65,12 @@
   .axis-label { font-size: 17px; font-weight: 700; fill: #23342E; }
   .note { font-size: 18px; color: #333; margin-top: 18px; line-height: 1.9; text-align: left; }
   .note b { color: #2F6F5E; font-size: 20px; }
+  .pref-name { font-size: 15px; color: #6b7a74; font-weight: 600; text-align: center; margin-top: 14px; }
+  .title-badge {
+    text-align: center; font-size: 26px; font-weight: 800; color: #2F6F5E;
+    background: #EAF3EF; border: 2px solid #2F6F5E; border-radius: 14px;
+    padding: 12px 10px; margin: 6px 0 4px; line-height: 1.4;
+  }
   .right { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .axis-block {
     background: #fff; border-radius: 16px; padding: 18px 20px;
@@ -107,6 +113,8 @@
   <div class="layout">
     <div class="left">
       <svg id="chart" viewBox="0 0 420 420" width="420" height="420"></svg>
+      <div class="pref-name" id="prefName"></div>
+      <div class="title-badge" id="titleBadge"></div>
       <div class="note" id="scoreText"></div>
     </div>
     <div class="right" id="axisDetails"></div>
@@ -205,7 +213,9 @@ function draw(code) {
   });
 
   document.getElementById('chart').innerHTML = svg;
-  document.getElementById('scoreText').innerHTML = '<b>' + data.name + '</b><br>' + AXES.map(a => {
+  document.getElementById('prefName').textContent = data.name;
+  document.getElementById('titleBadge').textContent = data.title ? '「' + data.title + '」' : '';
+  document.getElementById('scoreText').innerHTML = AXES.map(a => {
     const d = data.axes[a];
     return a + ': <b>' + d.score + '点</b>(全国' + d.rank + '位)';
   }).join('<br>');

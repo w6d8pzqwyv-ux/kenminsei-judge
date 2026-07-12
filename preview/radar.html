@@ -55,6 +55,28 @@
   .reel button:hover { border-color: #2F6F5E; }
   .reel button.selected { background: #2F6F5E; border-color: #2F6F5E; color: #fff; }
 
+  /* --- 市区町村ドリルダウン --- */
+  .muni-toggle-area { max-width: 1240px; margin-bottom: 12px; }
+  #muniToggleBtn {
+    font-size: 15px; padding: 10px 18px; border-radius: 999px; border: 2px solid #2F6F5E;
+    background: #fff; color: #2F6F5E; cursor: pointer; font-weight: 700;
+  }
+  #muniToggleBtn:hover { background: #EAF3EF; }
+  #muniToggleBtn:disabled { opacity: 0.6; cursor: wait; }
+  .muni-reel-wrap {
+    max-width: 1240px; background: #fff; border-radius: 20px; padding: 16px 24px;
+    box-shadow: 0 8px 24px rgba(47,111,94,0.12); margin-bottom: 20px;
+  }
+  .muni-disclaimer {
+    font-size: 13px; color: #6b5a1f; background: #FFF7E6; border: 1px solid #F0D999;
+    border-radius: 10px; padding: 10px 14px; margin: 10px 0; line-height: 1.7; text-align: left;
+  }
+  #backToPrefBtn {
+    font-size: 14px; padding: 8px 16px; border-radius: 999px; border: 2px solid #C56A47;
+    background: #fff; color: #C56A47; cursor: pointer; font-weight: 700; margin-top: 8px;
+  }
+  #backToPrefBtn:hover { background: #FBEFE9; }
+
   .layout { display: flex; gap: 28px; align-items: flex-start; max-width: 1240px; }
   .left {
     flex: 0 0 480px; background: #fff; border-radius: 20px; padding: 28px;
@@ -110,12 +132,24 @@
     </div>
   </div>
 
+  <div class="muni-toggle-area">
+    <button id="muniToggleBtn">市区町村までしぼり込む</button>
+  </div>
+  <div class="muni-reel-wrap" id="muniReelWrap" style="display:none">
+    <div class="reel-label" id="muniReelLabel">市区町村から選ぶ</div>
+    <div class="reel" id="muniReel"></div>
+  </div>
+
   <div class="layout">
     <div class="left">
       <svg id="chart" viewBox="0 0 420 420" width="420" height="420"></svg>
       <div class="pref-name" id="prefName"></div>
       <div class="title-badge" id="titleBadge"></div>
+      <div class="muni-disclaimer" id="muniDisclaimer" style="display:none">
+        この結果は公的統計からの推計です。都道府県の診断は大規模な調査データにもとづく傾向ですが、市区町村は統計指標から機械的に算出した推計値である点にご留意ください。
+      </div>
       <div class="note" id="scoreText"></div>
+      <button id="backToPrefBtn" style="display:none">← 県の結果に戻る</button>
     </div>
     <div class="right" id="axisDetails"></div>
   </div>
@@ -129,6 +163,8 @@
 const AXES = ['行動力', '社交性', 'きちょうめん度', '人情深さ', '好奇心'];
 let scores = {};
 let currentCode = '13';
+let muniData = null; // 遅延読み込み(初回ボタン押下時にfetch)
+let currentMode = 'pref'; // 'pref' | 'muni'
 
 async function load() {
   const [scoresRes, mapRes] = await Promise.all([
@@ -157,11 +193,16 @@ async function load() {
     reel.appendChild(btn);
   });
 
+  // 市区町村しぼり込みボタン
+  document.getElementById('muniToggleBtn').addEventListener('click', onMuniToggleClick);
+  document.getElementById('backToPrefBtn').addEventListener('click', backToPref);
+
   select('13'); // 東京都をデフォルト表示
 }
 
 function select(code) {
   currentCode = code;
+  currentMode = 'pref';
 
   // 地図のハイライト更新
   document.querySelectorAll('#mapContainer .prefecture').forEach((g) => {
@@ -173,7 +214,79 @@ function select(code) {
     btn.classList.toggle('selected', btn.dataset.code === code);
   });
 
-  draw(code);
+  renderResult(scores[code], 'pref');
+
+  // 県を切り替えたら、開いていた市区町村一覧はいったん閉じて選び直してもらう
+  const muniReelWrap = document.getElementById('muniReelWrap');
+  if (muniReelWrap.style.display !== 'none') {
+    muniReelWrap.style.display = 'none';
+    document.getElementById('muniToggleBtn').textContent = '市区町村までしぼり込む';
+  }
+}
+
+async function onMuniToggleClick() {
+  const wrap = document.getElementById('muniReelWrap');
+  const btn = document.getElementById('muniToggleBtn');
+
+  // すでに開いていれば閉じるだけ
+  if (wrap.style.display !== 'none') {
+    wrap.style.display = 'none';
+    btn.textContent = '市区町村までしぼり込む';
+    return;
+  }
+
+  if (!muniData) {
+    btn.disabled = true;
+    btn.textContent = '読み込み中…';
+    try {
+      const res = await fetch('muni_scores.json');
+      muniData = await res.json();
+    } catch (e) {
+      btn.disabled = false;
+      btn.textContent = '読み込みに失敗しました。もう一度お試しください';
+      return;
+    }
+  }
+
+  populateMuniReel(currentCode);
+  wrap.style.display = 'block';
+  btn.disabled = false;
+  btn.textContent = '市区町村一覧を閉じる';
+}
+
+function populateMuniReel(prefCode) {
+  const reel = document.getElementById('muniReel');
+  const label = document.getElementById('muniReelLabel');
+  reel.innerHTML = '';
+  label.textContent = (scores[prefCode] ? scores[prefCode].name : '') + 'の市区町村から選ぶ';
+
+  const entries = Object.entries(muniData).filter(([, m]) => m.prefCode === prefCode);
+  entries.forEach(([muniCode, m]) => {
+    const btn = document.createElement('button');
+    // 表示名は「県名 市区町村名」形式なので県名部分を省いて表示
+    const shortName = m.name.replace(scores[prefCode].name + ' ', '');
+    btn.textContent = shortName;
+    btn.dataset.code = muniCode;
+    btn.addEventListener('click', () => selectMuni(muniCode));
+    reel.appendChild(btn);
+  });
+}
+
+function selectMuni(muniCode) {
+  currentMode = 'muni';
+  const data = muniData[muniCode];
+
+  document.querySelectorAll('#muniReel button').forEach((btn) => {
+    btn.classList.toggle('selected', btn.dataset.code === muniCode);
+  });
+
+  renderResult(data, 'muni');
+}
+
+function backToPref() {
+  currentMode = 'pref';
+  renderResult(scores[currentCode], 'pref');
+  document.querySelectorAll('#muniReel button').forEach((btn) => btn.classList.remove('selected'));
 }
 
 function polarPoint(cx, cy, r, angleDeg) {
@@ -181,9 +294,8 @@ function polarPoint(cx, cy, r, angleDeg) {
   return [cx + r * Math.cos(rad), cy + r * Math.sin(rad)];
 }
 
-function draw(code) {
+function renderResult(data, mode) {
   const cx = 210, cy = 210, maxR = 150;
-  const data = scores[code];
   const values = AXES.map(a => data.axes[a].score);
 
   let svg = '';
@@ -214,7 +326,13 @@ function draw(code) {
 
   document.getElementById('chart').innerHTML = svg;
   document.getElementById('prefName').textContent = data.name;
+
+  const isMuni = mode === 'muni';
+  document.getElementById('titleBadge').style.display = isMuni ? 'none' : '';
   document.getElementById('titleBadge').textContent = data.title ? '「' + data.title + '」' : '';
+  document.getElementById('muniDisclaimer').style.display = isMuni ? 'block' : 'none';
+  document.getElementById('backToPrefBtn').style.display = isMuni ? 'inline-block' : 'none';
+
   document.getElementById('scoreText').innerHTML = AXES.map(a => {
     const d = data.axes[a];
     return a + ': <b>' + d.score + '点</b>(全国' + d.rank + '位)';
@@ -222,9 +340,10 @@ function draw(code) {
 
   document.getElementById('axisDetails').innerHTML = AXES.map(a => {
     const d = data.axes[a];
-    const detailItems = d.detail.map(item =>
-      '<li>' + item.label + ': ' + item.value + item.unit + '(全国' + item.rank + '位)　出典: ' + item.source + '</li>'
-    ).join('');
+    const detailItems = d.detail.map(item => {
+      const rankPart = item.rank ? '(全国' + item.rank + '位)' : '';
+      return '<li>' + item.label + ': ' + item.value + item.unit + rankPart + '　出典: ' + item.source + '</li>';
+    }).join('');
     return '<div class="axis-block">' +
       '<div class="axis-title">' + a + '(' + d.score + '点・全国' + d.rank + '位)</div>' +
       '<div class="axis-comment">' + d.comment + '</div>' +

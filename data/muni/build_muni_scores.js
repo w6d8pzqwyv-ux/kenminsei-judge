@@ -105,7 +105,7 @@ const META = {
   mochiie_ritsu: { label: '持ち家率', unit: '%', source: '住宅・土地統計調査(2023)' },
   suisenka_ritsu: { label: '水洗化率', unit: '%', source: '社会・人口統計体系(2023)' },
   shugyou_antei_ritsu: { label: '就業安定率(1-完全失業率)', unit: '%', source: '国勢調査(2020)' },
-  hikakukazoku_ritsu: { label: '非核家族世帯率', unit: '%', source: '国勢調査(2020)' },
+  hikakukazoku_ritsu: { label: '三世代同居など大家族世帯の割合', unit: '%', source: '国勢調査(2020)' },
   kon_in_ritsu: { label: '婚姻率(人口千人あたり)', unit: '‰', source: '社会・人口統計体系(2023)/国勢調査(2020)' },
   ichiji_hiritsu: { label: '第1次産業従業者比率', unit: '%', source: '経済センサス‐基礎調査(2014)' },
   toshokan_mitsudo: { label: '図書館密度(人口10万人あたり)', unit: '館', source: '社会教育調査(2021)' },
